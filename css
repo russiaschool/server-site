@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2b2t.us.org</title>
+    <style>
+      /* General body styling */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #f0e4cc; /* Light cream text */
+        background: url('https://cdn.discordapp.com/attachments/872575896727482448/1311531000622485534/2024-11-27_21.15.25.png?ex=6749daad&is=6748892d&hm=c1ced5256ba59efecc0d532a0711f7c366d12286d5b1e493be2fb7463d4fea0c&') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      /* Title Bar */
+      .title-bar {
+        width: 100%;
+        padding: 50px 0 15px 0; /* Increased top padding */
+        text-align: center;
+        font-size: 7em; /* Increased font size */
+        font-weight: bold;
+        color: #f0e4cc; /* Light cream text */
+        text-shadow: 2px 2px 4px black;
+        letter-spacing: 2px;
+        margin-bottom: -10px; /* Negative margin to move closer to nav bar */
+        background: transparent;
+        cursor: pointer;
+      }
+
+      /* Navigation Bar */
+      .nav-bar {
+  width: 100%;
+  max-width: 1200px;
+  padding: 5px 5px; /* Reduced padding */
+  background: rgba(34, 34, 34, 0.8); /* Dark background with 70% opacity */
+  border: 1px solid #605c5c;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 10px auto; /* Reduced margin */
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+
+      .nav-bar a {
+        color: #f0e4cc; /* Light cream links */
+        text-decoration: none;
+        margin: 0 8px; /* Reduced spacing between links */
+        transition: color 0.3s ease;
+      }
+
+      .nav-bar a:hover {
+        color: #f1c40f;
+      }
+
+      /* Main container for layout */
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px; /* Reduced padding */
+        gap: 15px; /* Reduced gap between sections */
+        box-sizing: border-box;
+      }
+
+      /* Sidebar and Main Sections */
+      .left, .middle, .right {
+        border: 1px solid #605c5c;
+        border-radius: 6px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      }
+
+      .left {
+        width: 15%;
+        min-height: 400px;
+        padding: 10px; /* Reduced padding */
+        text-align: center;
+        line-height: 1.4;
+        background: rgba(20, 20, 20, 0.6); /* 50% opaque */
+      }
+
+      .middle {
+        flex: 1;
+        min-height: 600px;
+        padding: 15px; /* Reduced padding */
+        line-height: 1.4;
+        background: #282a2e; /* 60% opaque */
+      }
+
+      .right {
+        width: 15%;
+        min-height: 400px;
+        padding: 10px; /* Reduced padding */
+        text-align: center;
+        line-height: 1.4;
+        background: rgba(20, 20, 20, 0.6); /* 50% opaque */
+      }
+
+      .right a {
+        color: #f0e4cc; /* Light cream links */
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .right a:hover {
+        color: #f1c40f;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        margin: 10px auto; /* Reduced margin */
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        color: #f0e4cc; /* Light cream text */
+        font-size: 0.8em;
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        color: #f0e4cc; /* Light cream text */
+      }
+
+      p {
+        margin: 8px 0;
+        font-size: 0.9em;
+        color: #f0e4cc; /* Light cream text */
+      }
+
+      /* IP Copied Message */
+      .ip-copied {
+        display: none;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #f0e4cc;
+        font-weight: bold;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+        transition: opacity 1s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Title Bar -->
+    <div class="title-bar" onclick="copyIP()">2B2T.US.ORG</div>
+
+    <!-- Navigation Bar -->
+    <div class="container">
+      <div class="nav-bar">
+        <a href="https://discord.gg/nWyZnbC3dY" target="_blank">Discord</a> > 
+        <a href="https://www.reddit.com/r/2b2tus/" target="_blank">Reddit</a>
+      </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="container">
+      <!-- Left Sidebar -->
+      <div class="left">
+        <p>I pay for 2b2t America myself, but donations are greatly appreciated. We need 45$ per month to keep the server running.</p>
+        <p><p>
+        <p>Once the server eventually dies, the world will be released as a torrent.<p>
+        <p><p>
+        <p>No bullshit included in donations needed, exact prices and information written out in the 'info' section. no one is profiting from this.<p>
+        <p><p>
+        <p>It is possible to be 'rewarded' for donations. (email me at 2b2t.us.org@gmail.com your Minecraft IGN for permanent priority queue status for $5)</p>
+        <button>Donate Now</button>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="middle">
+        <h3>2b2t.us.org</h3>
+        <p>2biggots2tyrants is a minecraft server that promises its players vanilla survival gameplay with PvP, a neverending world and no rules. The IP is 2b2t.us.org. It has been on the same world since november 2024. </p>
+        <h3>News</h3>
+        <p><strong>Latest Update:</strong> New website is open..</p>
+      </div>
+      
+
+      <!-- Right Sidebar -->
+      <div class="right">
+        <h3></h3>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- IP Copied Message -->
+    <div id="ip-copied" class="ip-copied">IP Copied!</div>
+
+    <!-- Player Count Script -->
+    <script>
+      const apiURL = "https://api.mcsrvstat.us/2/2b2t.us.org"; // Replace with your API or server IP
+
+      async function fetchPlayerCount() {
+        try {
+          const response = await fetch(apiURL);
+          const data = await response.json();
+          const playerCount = data.players ? data.players.online : "Unavailable";
+          document.getElementById("player-count").textContent = playerCount;
+        } catch (error) {
+          document.getElementById("player-count").textContent = "Error fetching player count.";
+          console.error("Error fetching player count:", error);
+        }
+      }
+
+      fetchPlayerCount();
+
+      // Function to copy IP and show message
+      function copyIP() {
+        const ip = "2b2t.us.org";
+        navigator.clipboard.writeText(ip).then(() => {
+          const ipCopiedElement = document.getElementById("ip-copied");
+          ipCopiedElement.style.display = "block";
+          ipCopiedElement.style.opacity = 1;
+
+          // Fade out after 2 seconds
+          setTimeout(() => {
+            ipCopiedElement.style.opacity = 0;
+            setTimeout(() => {
+              ipCopiedElement.style.display = "none";
+            }, 1000);
+          }, 2000);
+        }).catch((err) => {
+          console.error("Error copying text: ", err);
+        });
+      }
+    </script>
+  </body>
+</html>

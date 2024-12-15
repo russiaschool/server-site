@@ -10,46 +10,44 @@
         margin: 0;
         font-family: Arial, sans-serif;
         color: #f0e4cc; /* Light cream text */
-        background: url('https://cdn.discordapp.com/attachments/872575896727482448/1311531000622485534/2024-11-27_21.15.25.png?ex=6749daad&is=6748892d&hm=c1ced5256ba59efecc0d532a0711f7c366d12286d5b1e493be2fb7463d4fea0c&') no-repeat center center fixed;
+        background: url('<a href="https://cdn.discordapp.com/attachments/872575896727482448/1314827346267602974/2024-12-06_23.33.28.png?ex=67552fe3&is=6753de63&hm=2214bd385bf317fcd8c3a0134b4a391ecd6237df1d66598f29e682752c41b6b0&" border="0"></a>" border="0"></a>') no-repeat center center fixed;
         background-size: cover;
       }
 
       /* Title Bar */
       .title-bar {
         width: 100%;
-        padding: 50px 0 15px 0; /* Increased top padding */
+        padding: 50px 0 15px 0;
         text-align: center;
-        font-size: 7em; /* Increased font size */
+        font-size: 7em;
         font-weight: bold;
-        color: #f0e4cc; /* Light cream text */
+        color: #f0e4cc;
         text-shadow: 2px 2px 4px black;
         letter-spacing: 2px;
-        margin-bottom: -10px; /* Negative margin to move closer to nav bar */
+        margin-bottom: -10px;
         background: transparent;
         cursor: pointer;
       }
 
       /* Navigation Bar */
       .nav-bar {
-  width: 100%;
-  max-width: 1200px;
-  padding: 5px 5px; /* Reduced padding */
-  background: rgba(34, 34, 34, 0.8); /* Dark background with 70% opacity */
-  border: 1px solid #605c5c;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  margin: 0 auto 10px auto; /* Reduced margin */
-  text-align: center;
-  font-size: 0.8em;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-
+        width: 100%;
+        max-width: 1200px;
+        padding: 5px 5px;
+        background: rgba(34, 34, 34, 0.8);
+        border: 1px solid #605c5c;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        margin: 0 auto 10px auto;
+        text-align: center;
+        font-size: 0.8em;
+        font-weight: bold;
+      }
 
       .nav-bar a {
-        color: #f0e4cc; /* Light cream links */
+        color: #f0e4cc;
         text-decoration: none;
-        margin: 0 8px; /* Reduced spacing between links */
+        margin: 0 8px;
         transition: color 0.3s ease;
       }
 
@@ -62,8 +60,8 @@
         display: flex;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 10px; /* Reduced padding */
-        gap: 15px; /* Reduced gap between sections */
+        padding: 0 10px;
+        gap: 15px;
         box-sizing: border-box;
       }
 
@@ -77,46 +75,36 @@
       .left {
         width: 15%;
         min-height: 400px;
-        padding: 10px; /* Reduced padding */
+        padding: 10px;
         text-align: center;
         line-height: 1.4;
-        background: rgba(20, 20, 20, 0.6); /* 50% opaque */
+        background: rgba(20, 20, 20, 0.5);
       }
 
       .middle {
         flex: 1;
         min-height: 600px;
-        padding: 15px; /* Reduced padding */
+        padding: 15px;
         line-height: 1.4;
-        background: #282a2e; /* 60% opaque */
+        background: rgba(20, 20, 20, 0.4);
       }
 
       .right {
         width: 15%;
         min-height: 400px;
-        padding: 10px; /* Reduced padding */
+        padding: 10px;
         text-align: center;
         line-height: 1.4;
-        background: rgba(20, 20, 20, 0.6); /* 50% opaque */
-      }
-
-      .right a {
-        color: #f0e4cc; /* Light cream links */
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .right a:hover {
-        color: #f1c40f;
+        background: rgba(20, 20, 20, 0.5);
       }
 
       /* Footer */
       .footer {
         text-align: center;
-        margin: 10px auto; /* Reduced margin */
+        margin: 10px auto;
         padding: 10px;
         background: rgba(0, 0, 0, 0.9);
-        color: #f0e4cc; /* Light cream text */
+        color: #f0e4cc;
         font-size: 0.8em;
         width: 100%;
       }
@@ -125,40 +113,59 @@
         font-size: 1.3em;
         margin-bottom: 10px;
         padding-bottom: 5px;
-        color: #f0e4cc; /* Light cream text */
+        color: #f0e4cc;
       }
 
       p {
         margin: 8px 0;
         font-size: 0.9em;
-        color: #f0e4cc; /* Light cream text */
+        color: #f0e4cc;
       }
 
-      /* IP Copied Message */
-      .ip-copied {
+      /* PayPal-like Button Style */
+      .dbox-donation-page-button {
+        background-color: #0070ba;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        width: fit-content;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+      }
+
+      .dbox-donation-page-button:hover {
+        background-color: #00649d;
+      }
+
+      .dbox-donation-page-button img {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Hide Sections by Default */
+      .hidden {
         display: none;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #f0e4cc;
-        font-weight: bold;
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 5px;
-        transition: opacity 1s ease-out;
       }
     </style>
   </head>
   <body>
-    <!-- Title Bar -->
-    <div class="title-bar" onclick="copyIP()">2B2T.US.ORG</div>
+    <!-- Title Bar with click action to show the main section -->
+    <div class="title-bar" onclick="showSection('main')">2B2T.US.ORG</div>
 
     <!-- Navigation Bar -->
     <div class="container">
       <div class="nav-bar">
-        <a href="https://discord.gg/nWyZnbC3dY" target="_blank">Discord</a> > 
-        <a href="https://www.reddit.com/r/2b2tus/" target="_blank">Reddit</a>
+        <a href="javascript:void(0);" onclick="showSection('main'); return false;">MAIN</a> >> 
+        <a href="javascript:void(0);" onclick="showSection('info'); return false;">INFO</a> >> 
+        <a href="javascript:void(0);" onclick="showSection('contact'); return false;">CONTACT & MISC</a>
       </div>
     </div>
 
@@ -166,73 +173,71 @@
     <div class="container">
       <!-- Left Sidebar -->
       <div class="left">
-        <p>I pay for 2b2t America myself, but donations are greatly appreciated. We need 45$ per month to keep the server running.</p>
-        <p><p>
-        <p>Once the server eventually dies, the world will be released as a torrent.<p>
-        <p><p>
-        <p>No bullshit included in donations needed, exact prices and information written out in the 'info' section. no one is profiting from this.<p>
-        <p><p>
-        <p>It is possible to be 'rewarded' for donations. (email me at 2b2t.us.org@gmail.com your Minecraft IGN for permanent priority queue status for $5)</p>
-        <button>Donate Now</button>
+        <p>I pay for 2b2t America myself, but donations are greatly appreciated. We need $45 per month to keep the server running.</p>
+        <p>No bullshit included in donations, exact prices and info written out in the 'info' tab. No one is profiting from this.</p>
+        <p>It is possible to be 'rewarded' for donations. Check the 'info' tab for more info.</p>
+
+        <!-- Donation Button -->
+        <button class="" onclick="window.location.replace('https://donorbox.org/2b2t-us-org?default_interval=o');">
+          <img src="" alt="Donate">
+        </button>
       </div>
 
-      <!-- Middle Section -->
-      <div class="middle">
-        <h3>2b2t.us.org</h3>
-        <p>2biggots2tyrants is a minecraft server that promises its players vanilla survival gameplay with PvP, a neverending world and no rules. The IP is 2b2t.us.org. It has been on the same world since november 2024. </p>
-        <h3>News</h3>
-        <p><strong>Latest Update:</strong> New website is open..</p>
+      <!-- Main Section -->
+      <div class="middle hidden" id="main">
+        <h4>2b2t.us.org</h4>
+        <p>2biggots2tyrants is a Minecraft server that promises vanilla survival gameplay with PvP, a never-ending world, and no rules. The IP is 2b2t.us.org. It has been on the same world since November 2024.</p>
+        <h4>News</h4>
+        <p>Let's make a deal for an update to future minecraft versions, 1000+ players and 100+ gigabytes; if this goal is met i will be updating the server to whatever version 2b2t.org is on (likely 1.21)</p>
+        <p><p>
+        <p>do /stats for info on how many people have joined at least once and the world size *do this in game on the server<p>
+        <p><p>
+        <p>last updated 12th december 2024<p>
       </div>
-      
+
+      <!-- Info Section -->
+      <div class="middle hidden" id="info">
+        <h3>Donation Rewards</h3>
+        <p>There are currently two things possible to buy:</p>
+        <ul>
+          <li>An MOTD (Message of the Day) for $3. Your MOTD is permanent, and if you send more than one, they will be considered as well (recommended).</li>
+          <li>A temporary message on the tab list for $7. The message will be there for a week.</li>
+        </ul>
+      </div>
+
+      <!-- Contact & Misc Section -->
+      <div class="middle hidden" id="contact">
+        <h4>Contact & Misc Section</h4>
+        <p>Email: <a href="mailto:2b2t.us.org@gmail.com">2b2t.us.org@gmail.com</a></p>
+        <p>Subreddit: <a href="https://reddit.com/r/2b2tus">r/2b2tus</a></p>
+        <p>Discord: <a href="https://discord.gg/nWyZnbC3dY">discord community</a></p>
+        <h4>Voting Links</h4>
+        <p>Vote: <a href="https://minecraftservers.org/server/668655">1</a></p>
+        <p>Vote: <a href="https://minecraft-serverlist.com/server/1942">2</a></p>
+      </div>
 
       <!-- Right Sidebar -->
       <div class="right">
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <h4>Spread the word!</h4>
+        <p>Please spread the word! "But how?" You can make youtube videos, advertise on discord servers, reddit or even in game chat in other minecraft servers.<p>
+        <p><p>
       </div>
     </div>
 
-    <!-- IP Copied Message -->
-    <div id="ip-copied" class="ip-copied">IP Copied!</div>
-
-    <!-- Player Count Script -->
+    <!-- JavaScript -->
     <script>
-      const apiURL = "https://api.mcsrvstat.us/2/2b2t.us.org"; // Replace with your API or server IP
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.middle');
+        sections.forEach(section => section.classList.add('hidden'));
 
-      async function fetchPlayerCount() {
-        try {
-          const response = await fetch(apiURL);
-          const data = await response.json();
-          const playerCount = data.players ? data.players.online : "Unavailable";
-          document.getElementById("player-count").textContent = playerCount;
-        } catch (error) {
-          document.getElementById("player-count").textContent = "Error fetching player count.";
-          console.error("Error fetching player count:", error);
-        }
+        // Show the selected section
+        const sectionToShow = document.getElementById(sectionId);
+        sectionToShow.classList.remove('hidden');
       }
 
-      fetchPlayerCount();
-
-      // Function to copy IP and show message
-      function copyIP() {
-        const ip = "2b2t.us.org";
-        navigator.clipboard.writeText(ip).then(() => {
-          const ipCopiedElement = document.getElementById("ip-copied");
-          ipCopiedElement.style.display = "block";
-          ipCopiedElement.style.opacity = 1;
-
-          // Fade out after 2 seconds
-          setTimeout(() => {
-            ipCopiedElement.style.opacity = 0;
-            setTimeout(() => {
-              ipCopiedElement.style.display = "none";
-            }, 1000);
-          }, 2000);
-        }).catch((err) => {
-          console.error("Error copying text: ", err);
-        });
-      }
+      // Initialize to show the main section by default
+      showSection('main');
     </script>
   </body>
 </html>

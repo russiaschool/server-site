@@ -1,234 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2b2t.us.org</title>
-  <style>
-    /* General body styling */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #f0e4cc; /* Light cream text */
-      background: url('assets/images/background.jpg') no-repeat center center fixed; /* Background image */
-      background-size: cover; /* Make sure it covers the full screen */
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2b2t.us.org</title>
+    <style>
+      /* General body styling */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #f0e4cc; /* Light cream text */
+        background: url('background-image.jpg') no-repeat center center fixed; /* Background image */
+        background-size: cover;
+      }
 
-    /* Title Bar */
-    .title-bar {
-      width: 100%;
-      padding: 50px 0 15px 0;
-      text-align: center;
-      font-size: 7em;
-      font-weight: bold;
-      color: #f0e4cc;
-      text-shadow: 2px 2px 4px black;
-      letter-spacing: 2px;
-      margin-bottom: -10px;
-      background: transparent;
-      cursor: pointer;
-    }
+      /* Title Bar */
+      .title-bar {
+        width: 100%;
+        padding: 50px 0 15px 0;
+        text-align: center;
+        font-size: 7em;
+        font-weight: bold;
+        color: #f0e4cc;
+        text-shadow: 2px 2px 4px black;
+        letter-spacing: 2px;
+        margin-bottom: -10px;
+        background: transparent;
+        cursor: pointer;
+      }
 
-    /* Navigation Bar */
-    .nav-bar {
-      width: 100%;
-      max-width: 1200px;
-      padding: 5px 5px;
-      background: rgba(34, 34, 34, 0.8);
-      border: 1px solid #605c5c;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-      margin: 0 auto 10px auto;
-      text-align: center;
-      font-size: 0.8em;
-      font-weight: bold;
-    }
+      /* Navigation Bar */
+      .nav-bar {
+        width: 100%;
+        max-width: 1200px;
+        padding: 5px 5px;
+        background: rgba(34, 34, 34, 0.8);
+        border: 1px solid #605c5c;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        margin: 0 auto 10px auto;
+        text-align: center;
+        font-size: 0.8em;
+        font-weight: bold;
+      }
 
-    .nav-bar a {
-      color: #f0e4cc;
-      text-decoration: none;
-      margin: 0 8px;
-      transition: color 0.3s ease;
-    }
+      .nav-bar a {
+        color: #f0e4cc;
+        text-decoration: none;
+        margin: 0 8px;
+        transition: color 0.3s ease;
+      }
 
-    .nav-bar a:hover {
-      color: #f1c40f;
-    }
+      .nav-bar a:hover {
+        color: #f1c40f;
+      }
 
-    /* Main container for layout */
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 10px;
-      gap: 15px;
-      box-sizing: border-box;
-    }
+      /* Main container for layout */
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+        gap: 15px;
+        box-sizing: border-box;
+      }
 
-    /* Sidebar and Main Sections */
-    .left, .middle, .right {
-      border: 1px solid #605c5c;
-      border-radius: 6px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    }
+      /* Sidebar and Main Sections */
+      .left, .middle, .right {
+        border: 1px solid #605c5c;
+        border-radius: 6px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      }
 
-    .left {
-      width: 15%;
-      min-height: 400px;
-      padding: 10px;
-      text-align: center;
-      line-height: 1.4;
-      background: rgba(20, 20, 20, 0.5);
-    }
+      .left {
+        width: 15%;
+        min-height: 400px;
+        padding: 10px;
+        text-align: center;
+        line-height: 1.4;
+        background: rgba(20, 20, 20, 0.5);
+      }
 
-    .middle {
-      flex: 1;
-      min-height: 600px;
-      padding: 15px;
-      line-height: 1.4;
-      background: rgba(20, 20, 20, 0.4);
-    }
+      .middle {
+        flex: 1;
+        min-height: 600px;
+        padding: 15px;
+        line-height: 1.4;
+        background: rgba(20, 20, 20, 0.4);
+      }
 
-    .right {
-      width: 15%;
-      min-height: 400px;
-      padding: 10px;
-      text-align: center;
-      line-height: 1.4;
-      background: rgba(20, 20, 20, 0.5);
-    }
+      .right {
+        width: 15%;
+        min-height: 400px;
+        padding: 10px;
+        text-align: center;
+        line-height: 1.4;
+        background: rgba(20, 20, 20, 0.5);
+      }
 
-    /* Footer */
-    .footer {
-      text-align: center;
-      margin: 10px auto;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.9);
-      color: #f0e4cc;
-      font-size: 0.8em;
-      width: 100%;
-    }
+      /* Footer */
+      .footer {
+        text-align: center;
+        margin: 10px auto;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        color: #f0e4cc;
+        font-size: 0.8em;
+        width: 100%;
+      }
 
-    h2 {
-      font-size: 1.3em;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
-      color: #f0e4cc;
-    }
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        color: #f0e4cc;
+      }
 
-    p {
-      margin: 8px 0;
-      font-size: 0.9em;
-      color: #f0e4cc;
-    }
+      p {
+        margin: 8px 0;
+        font-size: 0.9em;
+        color: #f0e4cc;
+      }
 
-    /* PayPal-like Button Style */
-    .dbox-donation-page-button {
-      background-color: #0070ba;
-      color: white;
-      font-size: 16px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      cursor: pointer;
-      width: fit-content;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      transition: background-color 0.3s ease;
-    }
+      /* PayPal-like Button Style */
+      .dbox-donation-page-button {
+        background-color: #0070ba;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        width: fit-content;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+      }
 
-    .dbox-donation-page-button:hover {
-      background-color: #00649d;
-    }
+      .dbox-donation-page-button:hover {
+        background-color: #00649d;
+      }
 
-    .dbox-donation-page-button img {
-      width: 20px;
-      height: 20px;
-    }
+      .dbox-donation-page-button img {
+        width: 20px;
+        height: 20px;
+      }
 
-    /* Hide Sections by Default */
-    .hidden {
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <!-- Title Bar with click action to show the main section -->
-  <div class="title-bar" onclick="showSection('main')">2B2T.US.ORG</div>
+      /* Hide Sections by Default */
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Title Bar -->
+    <div class="title-bar" onclick="showSection('main')">2B2T.US.ORG</div>
 
-  <!-- Navigation Bar -->
-  <div class="container">
-    <div class="nav-bar">
-      <a href="javascript:void(0);" onclick="showSection('main'); return false;">MAIN</a> >> 
-      <a href="javascript:void(0);" onclick="showSection('info'); return false;">INFO</a> >> 
-      <a href="javascript:void(0);" onclick="showSection('contact'); return false;">CONTACT & MISC</a>
-    </div>
-  </div>
-
-  <!-- Main Layout -->
-  <div class="container">
-    <!-- Left Sidebar -->
-    <div class="left">
-      <p>I pay for 2b2t America myself, but donations are greatly appreciated. We need $45 per month to keep the server running.</p>
-      <p>No bullshit included in donations, exact prices and info written out in the 'info' tab. No one is profiting from this.</p>
-      <p>It is possible to be 'rewarded' for donations. Check the 'info' tab for more info.</p>
-
-      <!-- Donation Button -->
-      <button onclick="window.location.replace('https://donorbox.org/2b2t-us-org?default_interval=o');" target="_blank">
-        <img src="assets/images/donate.png" alt="Donate">
-      </button>
+    <!-- Navigation Bar -->
+    <div class="container">
+      <div class="nav-bar">
+        <a href="javascript:void(0);" onclick="showSection('main'); return false;">MAIN</a> >> 
+        <a href="javascript:void(0);" onclick="showSection('info'); return false;">INFO</a> >> 
+        <a href="javascript:void(0);" onclick="showSection('contact'); return false;">CONTACT & MISC</a>
+      </div>
     </div>
 
-    <!-- Main Section -->
-    <div class="middle hidden" id="main">
-      <h4>2b2t.us.org</h4>
-      <p>2biggots2tyrants is a Minecraft server that promises vanilla survival gameplay with PvP, a never-ending world, and no rules. The IP is 2b2t.us.org. It has been on the same world since November 2024.</p>
+    <!-- Main Layout -->
+    <div class="container">
+      <!-- Left Sidebar -->
+      <div class="left">
+        <p>I pay for 2b2t America myself, but donations are greatly appreciated. We need $45 per month to keep the server running.</p>
+        <p>No bullshit included in donations, exact prices and info written out in the 'info' tab. No one is profiting from this.</p>
+        <p>It is possible to be 'rewarded' for donations. Check the 'info' tab for more info.</p>
+
+        <!-- Donation Button -->
+        <button onclick="window.location.replace('https://donorbox.org/2b2t-us-org?default_interval=o');" target="_blank">
+          <img src="donate.png" alt="Donate">
+        </button>
+      </div>
+
+      <!-- Main Section -->
+      <div class="middle hidden" id="main">
+        <h4>2b2t.us.org</h4>
+        <p>2biggots2tyrants is a Minecraft server that promises vanilla survival gameplay with PvP, a never-ending world, and no rules. The IP is 2b2t.us.org. It has been on the same world since November 2024.</p>
+        <h4>News</h4>
+        <p>Let's make a deal for an update to future minecraft versions, 1000+ players and 100+ gigabytes; if this goal is met i will be updating the server to whatever version 2b2t.org is on (likely 1.21)</p>
+        <p>do /stats for info on how many people have joined at least once and the world size *do this in game on the server</p>
+        <p>last updated 12th december 2024</p>
+      </div>
+
+      <!-- Info Section -->
+      <div class="middle hidden" id="info">
+        <h3>Donation Rewards</h3>
+        <p>There are currently two things possible to buy:</p>
+        <ul>
+          <li>An MOTD (Message of the Day) for $3. Your MOTD is permanent, and if you send more than one, they will be considered as well (recommended).</li>
+          <li>A temporary message on the tab list for $7. The message will be there for a week.</li>
+        </ul>
+      </div>
+
+      <!-- Contact & Misc Section -->
+      <div class="middle hidden" id="contact">
+        <h4>Contact & Misc Section</h4>
+        <p>Email: <a href="mailto:2b2t.us.org@gmail.com">2b2t.us.org@gmail.com</a></p>
+        <p>Subreddit: <a href="https://reddit.com/r/2b2tus">r/2b2tus</a></p>
+        <p>Discord: <a href="https://discord.gg/nWyZnbC3dY">discord community</a></p>
+        <h4>Voting Links</h4>
+        <p>Vote: <a href="https://minecraftservers.org/server/668655">1</a></p>
+        <p>Vote: <a href="https://minecraft-serverlist.com/server/1942">2</a></p>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="right">
+        <h4>Spread the word!</h4>
+        <p>Please spread the word! "But how?" You can make youtube videos, advertise on discord servers, reddit or even in game chat in other minecraft servers.</p>
+      </div>
     </div>
 
-    <!-- Info Section -->
-    <div class="middle hidden" id="info">
-      <h3>Donation Rewards</h3>
-      <p>There are currently two things possible to buy:</p>
-      <ul>
-        <li>An MOTD (Message of the Day) for $3. Your MOTD is permanent, and if you send more than one, they will be considered as well (recommended).</li>
-        <li>A temporary message on the tab list for $7. The message will be there for a week.</li>
-      </ul>
-    </div>
+    <!-- JavaScript -->
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.middle');
+        sections.forEach(section => section.classList.add('hidden'));
 
-    <!-- Contact & Misc Section -->
-    <div class="middle hidden" id="contact">
-      <h4>Contact & Misc Section</h4>
-      <p>Email: <a href="mailto:2b2t.us.org@gmail.com">2b2t.us.org@gmail.com</a></p>
-      <p>Subreddit: <a href="https://reddit.com/r/2b2tus">r/2b2tus</a></p>
-      <p>Discord: <a href="https://discord.gg/nWyZnbC3dY">discord community</a></p>
-      <h4>Voting Links</h4>
-      <p>Vote: <a href="https://minecraftservers.org/server/668655">1</a></p>
-      <p>Vote: <a href="https://minecraft-serverlist.com/server/1942">2</a></p>
-    </div>
+        // Show the selected section
+        const sectionToShow = document.getElementById(sectionId);
+        sectionToShow.classList.remove('hidden');
+      }
 
-    <!-- Right Sidebar -->
-    <div class="right">
-      <h4>Spread the word!</h4>
-      <p>Please spread the word! "But how?" You can make youtube videos, advertise on discord servers, reddit or even in game chat in other minecraft servers.</p>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    function showSection(sectionId) {
-      const sections = document.querySelectorAll('.middle');
-      sections.forEach(section => section.classList.add('hidden'));
-
-      const sectionToShow = document.getElementById(sectionId);
-      sectionToShow.classList.remove('hidden');
-    }
-
-    // Initialize to show the main section by default
-    showSection('main');
-  </script>
-</body>
+      // Initialize to show the main section by default
+      showSection('main');
+    </script>
+  </body>
 </html>

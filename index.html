@@ -10,20 +10,21 @@
         margin: 0;
         font-family: Arial, sans-serif;
         color: #f0e4cc; /* Light cream text */
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        background: url('water.png') no-repeat center center fixed;
+        background-size: cover;
       }
 
       /* Title Bar */
       .title-bar {
         width: 100%;
-        padding: 50px 0 15px 0;
+        padding: 50px 0 15px 0; /* Increased top padding */
         text-align: center;
-        font-size: 7em;
+        font-size: 7em; /* Increased font size */
         font-weight: bold;
-        color: #f0e4cc;
+        color: #f0e4cc; /* Light cream text */
         text-shadow: 2px 2px 4px black;
         letter-spacing: 2px;
-        margin-bottom: -10px;
+        margin-bottom: -10px; /* Negative margin to move closer to nav bar */
         background: transparent;
         cursor: pointer;
       }
@@ -32,21 +33,22 @@
       .nav-bar {
         width: 100%;
         max-width: 1200px;
-        padding: 5px 5px;
-        background: rgba(34, 34, 34, 0.8);
+        padding: 5px 5px; /* Reduced padding */
+        background: rgba(34, 34, 34, 0.8); /* Dark background with 70% opacity */
         border: 1px solid #605c5c;
         border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-        margin: 0 auto 10px auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        margin: 0 auto 10px auto; /* Reduced margin */
         text-align: center;
         font-size: 0.8em;
         font-weight: bold;
+        box-sizing: border-box;
       }
 
       .nav-bar a {
-        color: #f0e4cc;
+        color: #f0e4cc; /* Light cream links */
         text-decoration: none;
-        margin: 0 8px;
+        margin: 0 8px; /* Reduced spacing between links */
         transition: color 0.3s ease;
       }
 
@@ -59,14 +61,14 @@
         display: flex;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 10px;
-        gap: 15px;
+        padding: 0 10px; /* Reduced padding */
+        gap: 15px; /* Reduced gap between sections */
         box-sizing: border-box;
       }
 
       /* Sidebar and Main Sections */
       .left, .middle, .right {
-        border: 1px solid #282a2e;
+        border: 1px solid #605c5c;
         border-radius: 6px;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
       }
@@ -74,36 +76,46 @@
       .left {
         width: 15%;
         min-height: 400px;
-        padding: 10px;
+        padding: 10px; /* Reduced padding */
         text-align: center;
         line-height: 1.4;
-        background: rgba(20, 20, 20, 0.5);
+        background: rgba(20, 20, 20, 0.6); /* 50% opaque */
       }
 
       .middle {
         flex: 1;
         min-height: 600px;
-        padding: 15px;
+        padding: 15px; /* Reduced padding */
         line-height: 1.4;
-        background: rgba(20, 20, 20, 0.4);
+        background: #282a2e; /* 60% opaque */
       }
 
       .right {
         width: 15%;
         min-height: 400px;
-        padding: 10px;
+        padding: 10px; /* Reduced padding */
         text-align: center;
         line-height: 1.4;
-        background: rgba(20, 20, 20, 0.5);
+        background: rgba(20, 20, 20, 0.6); /* 50% opaque */
+      }
+
+      .right a {
+        color: #f0e4cc; /* Light cream links */
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .right a:hover {
+        color: #f1c40f;
       }
 
       /* Footer */
       .footer {
         text-align: center;
-        margin: 10px auto;
+        margin: 10px auto; /* Reduced margin */
         padding: 10px;
         background: rgba(0, 0, 0, 0.9);
-        color: #f0e4cc;
+        color: #f0e4cc; /* Light cream text */
         font-size: 0.8em;
         width: 100%;
       }
@@ -112,27 +124,27 @@
         font-size: 1.3em;
         margin-bottom: 10px;
         padding-bottom: 5px;
-        color: #f0e4cc;
+        color: #f0e4cc; /* Light cream text */
       }
 
       p {
         margin: 8px 0;
         font-size: 0.9em;
-        color: #f0e4cc;
+        color: #f0e4cc; /* Light cream text */
       }
 
-      /* Donation Button Styling */
+      /* PayPal-like Button Style */
       .dbox-donation-page-button {
-        background-color: transparent;
+        background-color: #0070ba; /* PayPal blue color */
         color: white;
-        font-size: 16px;
-        padding: 10px 20px;
+        font-size: 16px; /* Larger text for better visibility */
+        padding: 10px 20px; /* Increased padding */
         border: none;
-        border-radius: 50px;
+        border-radius: 50px; /* Rounded corners */
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 10px; /* Space between text and icon */
         text-decoration: none;
         cursor: pointer;
         width: fit-content;
@@ -141,11 +153,11 @@
       }
 
       .dbox-donation-page-button:hover {
-        background-color: #00649d;
+        background-color: #00649d; /* Darker blue on hover */
       }
 
       .dbox-donation-page-button img {
-        width: 20px;
+        width: 20px; /* Smaller PayPal logo */
         height: 20px;
       }
 
@@ -153,50 +165,36 @@
       .hidden {
         display: none;
       }
-
-      /* Full Page Background Image */
-      #background-image img {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-      }
     </style>
   </head>
   <body>
-    <!-- Background Image as img tag -->
-    <div id="background-image">
-      <img src="2024-11-21_17.23.24.png" alt="Background Image">
-    </div>
-
-    <!-- Title Bar -->
-    <div class="title-bar" onclick="showSection('main')">2b2t us</div>
+    <!-- Title Bar with click action to show the main section -->
+    <div class="title-bar" onclick="showSection('main')">ada uwu</div>
 
     <!-- Navigation Bar -->
     <div class="container">
       <div class="nav-bar">
-        <a href="javascript:void(0);" onclick="showSection('main'); return false;">MAIN</a> >> 
-        <a href="javascript:void(0);" onclick="showSection('info'); return false;">INFO</a> >> 
-        <a href="javascript:void(0);" onclick="showSection('contact'); return false;">CONTACT & MISC</a>
+        <a href="javascript:void(0);" onclick="showSection('main')">MAIN</a> >> 
+        <a href="javascript:void(0);" onclick="showSection('info')">INFO</a> >> 
+        <a href="javascript:void(0);" onclick="showSection('contact')">CONTACT & MISC</a>
       </div>
     </div>
 
     <!-- Main Layout -->
     <div class="container">
       <!-- Left Sidebar -->
-      <div class="left">
-        <p>I pay for 2b2t America myself, but donations are greatly appreciated. We need $45 per month to keep the server running.</p>
-        <p>No bullshit included in donations, exact prices and info written out in the 'info' tab. No one is profiting from this.</p>
-        <p>It is possible to be 'rewarded' for donations. Check the 'info' tab for more info.</p>
+      <!-- Left Sidebar -->
+<div class="left">
+  <p>I pay for 2b2t America myself, but donations are greatly appreciated. We need 45$ per month to keep the server running.</p>
+  <p>No bullshit included in donations needed, exact prices and information written out in the 'info' tab. No one is profiting from this.</p>
+  <p>It is possible to be 'rewarded' for donations. Check the 'info' tab for more information.</p>
 
-        <!-- Donation Button -->
-        <button class="donate" onclick="window.location.replace('https://donorbox.org/2b2t-us-org?default_interval=o');">
-          <img src="donate" alt="Donate">
-        </button>
-      </div>
+  <!-- PayPal-like DonorBox Donation Button -->
+  <a class="donate.gif" href="https://donorbox.org/2b2t-us-org?default_interval=o">
+    <img src="donate.gif" alt="Donate Icon">
+    
+  </a>
+</div>
 
       <!-- Main Section -->
       <div class="middle hidden" id="main">

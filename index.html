@@ -17,14 +17,14 @@
       /* Title Bar */
       .title-bar {
         width: 100%;
-        padding: 50px 0 15px 0; /* Increased top padding */
+        padding: 50px 0 15px 0;
         text-align: center;
-        font-size: 7em; /* Increased font size */
+        font-size: 7em;
         font-weight: bold;
-        color: #f0e4cc; /* Light cream text */
+        color: #f0e4cc;
         text-shadow: 2px 2px 4px black;
         letter-spacing: 2px;
-        margin-bottom: -10px; /* Negative margin to move closer to nav bar */
+        margin-bottom: -10px;
         background: transparent;
         cursor: pointer;
       }
@@ -33,22 +33,21 @@
       .nav-bar {
         width: 100%;
         max-width: 1200px;
-        padding: 5px 5px; /* Reduced padding */
-        background: rgba(34, 34, 34, 1); /* Dark background with 70% opacity */
+        padding: 10px;
+        background: rgba(34, 34, 34, 0.9);
         border: 1px solid #605c5c;
         border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-        margin: 0 auto 10px auto; /* Reduced margin */
+        margin: 0 auto 20px auto;
         text-align: center;
-        font-size: 0.8em;
+        font-size: 1em;
         font-weight: bold;
         box-sizing: border-box;
       }
 
       .nav-bar a {
-        color: #f0e4cc; /* Light cream links */
+        color: #f0e4cc;
         text-decoration: none;
-        margin: 0 8px; /* Reduced spacing between links */
+        margin: 0 12px;
         transition: color 0.3s ease;
       }
 
@@ -56,13 +55,13 @@
         color: #f1c40f;
       }
 
-      /* Main container for layout */
+      /* Layout container */
       .container {
         display: flex;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 10px; /* Reduced padding */
-        gap: 15px; /* Reduced gap between sections */
+        padding: 0 10px;
+        gap: 15px;
         box-sizing: border-box;
       }
 
@@ -71,94 +70,55 @@
         border: 1px solid #605c5c;
         border-radius: 6px;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        background: rgba(20, 20, 20, 0.5);
       }
 
-      .left {
-        width: 15%;
+      .left, .right {
+        width: 20%;
         min-height: 400px;
-        padding: 10px; /* Reduced padding */
+        padding: 10px;
         text-align: center;
         line-height: 1.4;
-        background: rgba(20, 20, 20, 0.5); /* 50% opaque */
       }
 
       .middle {
         flex: 1;
         min-height: 600px;
-        padding: 15px; /* Reduced padding */
+        padding: 15px;
         line-height: 1.4;
-        background: rgba(20, 20, 20, 0.3); /* 50% opaque */
-      }
-
-      .right {
-        width: 15%;
-        min-height: 400px;
-        padding: 10px; /* Reduced padding */
-        text-align: center;
-        line-height: 1.4;
-        background: rgba(20, 20, 20, 0.5); /* 50% opaque */
-      }
-
-      .right a {
-        color: #f0e4cc; /* Light cream links */
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .right a:hover {
-        color: #f1c40f;
+        background: rgba(20, 20, 20, 0.3);
       }
 
       /* Footer */
       .footer {
         text-align: center;
-        margin: 10px auto; /* Reduced margin */
+        margin: 20px auto;
         padding: 10px;
         background: rgba(0, 0, 0, 0.9);
-        color: #f0e4cc; /* Light cream text */
+        color: #f0e4cc;
         font-size: 0.8em;
         width: 100%;
       }
 
-      h2 {
-        font-size: 1.3em;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-        color: #f0e4cc; /* Light cream text */
-      }
-
-      p {
-        margin: 8px 0;
-        font-size: 0.9em;
-        color: #f0e4cc; /* Light cream text */
-      }
-
       /* PayPal-like Button Style */
       .dbox-donation-page-button {
-        background-color: #0070ba; /* PayPal blue color */
+        background-color: #0070ba;
         color: white;
-        font-size: 16px; /* Larger text for better visibility */
-        padding: 10px 20px; /* Increased padding */
+        font-size: 16px;
+        padding: 10px 20px;
         border: none;
-        border-radius: 50px; /* Rounded corners */
-        display: flex;
-        justify-content: center;
+        border-radius: 50px;
+        display: inline-flex;
         align-items: center;
-        gap: 10px; /* Space between text and icon */
+        gap: 10px;
         text-decoration: none;
         cursor: pointer;
-        width: fit-content;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         transition: background-color 0.3s ease;
       }
 
       .dbox-donation-page-button:hover {
-        background-color: #00649d; /* Darker blue on hover */
-      }
-
-      .dbox-donation-page-button img {
-        width: 20px; /* Smaller PayPal logo */
-        height: 20px;
+        background-color: #00649d;
       }
 
       /* Hide Sections by Default */
@@ -168,43 +128,38 @@
     </style>
   </head>
   <body>
-    <!-- Title Bar with click action to show the main section -->
+    <!-- Title Bar -->
     <div class="title-bar" onclick="showSection('main')">2b2t.us.org</div>
 
     <!-- Navigation Bar -->
-    <div class="container">
-      <div class="nav-bar">
-        <a href="javascript:void(0);" onclick="showSection('main')">MAIN</a> >> 
-        <a href="javascript:void(0);" onclick="showSection('info')">INFO</a> >> 
-        <a href="javascript:void(0);" onclick="showSection('contact')">CONTACT & MISC</a>
-      </div>
+    <div class="nav-bar">
+      <a href="javascript:void(0);" onclick="showSection('main')">MAIN</a> >>
+      <a href="javascript:void(0);" onclick="showSection('info')">INFO</a> >>
+      <a href="javascript:void(0);" onclick="showSection('contact')">CONTACT & MISC</a>
     </div>
 
     <!-- Main Layout -->
     <div class="container">
       <!-- Left Sidebar -->
-      <!-- Left Sidebar -->
-<div class="left">
-  <p>You can now donate to the server for 'rewards' that do not affect your in game progress but are instead for everyone to see.</p>
-  <p>Refer to 'info' for descriptions and pricings.</p>
-  <!-- PayPal-like DonorBox Donation Button -->
-  <a class="donate" href="https://donorbox.org/2b2t-us-org?default_interval=o">
-    <img src="donate" alt="Donate Icon">
-    
-  </a>
-</div>
+      <div class="left">
+        <p>You can now donate to the server for 'rewards' that do not affect your in-game progress but are instead for everyone to see.</p>
+        <p>Refer to 'info' for descriptions and pricing.</p>
+        <a class="dbox-donation-page-button" href="https://donorbox.org/2b2t-us-org?default_interval=o">
+          <img src="donate-icon.png" alt="Donate Icon" width="20" height="20">
+          Donate
+        </a>
+      </div>
 
-      <!-- Main Section -->
+      <!-- Middle Sections -->
       <div class="middle hidden" id="main">
         <h4>2b2t.us.org</h4>
         <p>2builders2tools is a Minecraft server that promises vanilla survival gameplay with PvP, a never-ending world, and no rules. The IP is 2b2t.us.org. It has been on the same world since November 2024.</p>
         <h4>News</h4>
-        <p>12/20/24: website redone</p>
-        <p>12/18/24the chunk dupe has been enabled<p>
-        <p>last updated 20th december 2024</p>
+        <p>12/20/24: Website redone</p>
+        <p>12/18/24: The chunk dupe has been enabled</p>
+        <p>Last updated 20th December 2024</p>
       </div>
 
-      <!-- Info Section -->
       <div class="middle hidden" id="info">
         <h3>Donation Rewards</h3>
         <p>There are currently two things possible to buy:</p>
@@ -214,12 +169,11 @@
         </ul>
       </div>
 
-      <!-- Contact & Misc Section -->
       <div class="middle hidden" id="contact">
-        <h4>Contact & Misc Section</h4>
+        <h4>Contact & Misc</h4>
         <p>Email: <a href="mailto:2b2t.us.org@gmail.com">2b2t.us.org@gmail.com</a></p>
         <p>Subreddit: <a href="https://reddit.com/r/2b2tus">r/2b2tus</a></p>
-        <p>Discord: <a href="https://discord.gg/nWyZnbC3dY">discord community</a></p>
+        <p>Discord: <a href="https://discord.gg/nWyZnbC3dY">Discord Community</a></p>
         <h4>Voting Links</h4>
         <p>Vote: <a href="https://minecraftservers.org/server/668655">1</a></p>
         <p>Vote: <a href="https://minecraft-serverlist.com/server/1942">2</a></p>
@@ -227,24 +181,21 @@
 
       <!-- Right Sidebar -->
       <div class="right">
-        <h4></h4>
-        <p></p>
+        <h4>Coming Soon</h4>
+        <p>Additional content to be added here.</p>
       </div>
     </div>
 
     <!-- JavaScript -->
     <script>
       function showSection(sectionId) {
-        // Hide all sections
-        const sections = document.querySelectorAll('.middle');
-        sections.forEach(section => section.classList.add('hidden'));
-
-        // Show the selected section
-        const sectionToShow = document.getElementById(sectionId);
-        sectionToShow.classList.remove('hidden');
+        document.querySelectorAll('.middle').forEach(section => {
+          section.classList.add('hidden');
+        });
+        document.getElementById(sectionId).classList.remove('hidden');
       }
 
-      // Initialize to show the main section by default
+      // Show main section by default
       showSection('main');
     </script>
   </body>

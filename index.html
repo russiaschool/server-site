@@ -3,74 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frog Minecraft Server</title>
+  <title>Priority Queue Page</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-    }
-    .container {
+      background-color: #121212;
+      color: #ffffff;
       display: flex;
+      justify-content: center;
+      align-items: center;
       height: 100vh;
     }
-    .content {
-      flex: 1;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      max-width: 1000px;
+      width: 90%;
+    }
+
+    .box {
+      background-color: #1e1e1e;
       padding: 20px;
-      border-right: 2px solid #007000; /* Thinner border, darker green */
-      overflow-y: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    .sidebar {
-      background-color: #00a000; /* Darker green background */
-      width: 30%;
+
+    .cta-box {
+      text-align: center;
     }
-    h1, p {
-      margin: 0;
-    }
-    h1 {
+
+    .cta-box h2 {
       font-size: 24px;
       margin-bottom: 10px;
     }
-    p {
-      line-height: 1.5;
-    }
-    .donate {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .donate button {
-      background-color: #007000;
-      color: white;
-      border: none;
-      padding: 10px 20px;
+
+    .cta-box p {
+      margin: 10px 0 20px;
       font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
     }
-    .donate button:hover {
-      background-color: #005a00;
+
+    .cta-box button {
+      background-color: #4caf50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .cta-box button:hover {
+      background-color: #45a049;
+    }
+
+    .text-box h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .text-box p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="content">
-      <h1>frog.org - Minecraft anarchy server</h1>
-      <p>
-        Frog is a no-rules Minecraft server that has been running for several months and has had hundreds of players join at least once. You can hack, grief, kill, steal, and dupe while possible.
-      </p>
-      <p>
-        Frog was started 11/14/2024 at around 6:00 PM CST with the intent for a Minecraft server without any rules, no admin interference, and a map that never resets.
-      </p>
-      <p>
-        <strong>Version:</strong> 1.12.2 (You can join using 1.12.2 - 1.21.4)<br>
-        <strong>IP:</strong> frog.us.org<br>
-        <em>*The server is not cracked and does not support Bedrock players.</em>
-      </p>
-      <div class="donate">
-        <button>Donate via PayPal</button>
-      </div>
+    <!-- Subscription Box -->
+    <div class="box cta-box">
+      <h2>Join 2b2t Faster with Priority Queue</h2>
+      <p>$19.99 - One Month</p>
+      <button>Subscribe</button>
+      <br><br>
+      <button>Buy</button>
+      <p style="margin-top: 10px; font-size: 12px;">Pay securely with <img src="placeholder-for-icon.png" alt="icon" style="height: 16px; vertical-align: middle;"></p>
     </div>
-    <div class="sidebar"></div>
+
+    <!-- Information Box -->
+    <div class="box text-box">
+      <h3>Welcome</h3>
+      <p>Welcome to the 2b2t shop and thank you for visiting. Here you can purchase priority queue status for your Minecraft account, which will let you join the server faster. The priority queue status lasts for one month, after which it expires and is removed from your account.</p>
+
+      <h3>About</h3>
+      <p>2b2t is a Minecraft server with the goal to never reset the world in a free-for-all no-rules PvP environment, with little modification to the vanilla survival gamemode. The world is over 10 years old, with a size of 11,845 GB and over 689,330 players visiting at least once. The IP to connect is 2b2t.org.</p>
+
+      <h3>Help and Questions</h3>
+      <p>If you have any issues or questions, please contact our support team.</p>
+    </div>
   </div>
 </body>
 </html>

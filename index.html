@@ -1,249 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>frog</title>
-    <style>
-      /* General body styling */
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        color: #f0e4cc; /* Light cream text */
-        background: url('2024-12-20_14.42.34.png') no-repeat center center fixed;
-        background-size: cover;
-      }
-
-      /* Title Bar */
-      .title-bar {
-        width: 100%;
-        padding: 50px 0 15px 0; /* Increased top padding */
-        text-align: center;
-        font-size: 7em; /* Increased font size */
-        font-weight: bold;
-        color: #f0e4cc; /* Light cream text */
-        text-shadow: 2px 2px 4px black;
-        letter-spacing: 2px;
-        margin-bottom: -10px; /* Negative margin to move closer to nav bar */
-        background: transparent;
-        cursor: pointer;
-      }
-
-      /* Navigation Bar */
-      .nav-bar {
-        width: 100%;
-        max-width: 1200px;
-        padding: 5px 5px; /* Reduced padding */
-        background: rgba(34, 34, 34, 1); /* Dark background with 70% opacity */
-        border: 1px solid #605c5c;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-        margin: 0 auto 10px auto; /* Reduced margin */
-        text-align: center;
-        font-size: 0.8em;
-        font-weight: bold;
-        box-sizing: border-box;
-      }
-
-      .nav-bar a {
-        color: #f0e4cc; /* Light cream links */
-        text-decoration: none;
-        margin: 0 8px; /* Reduced spacing between links */
-        transition: color 0.3s ease;
-      }
-
-      .nav-bar a:hover {
-        color: #f1c40f;
-      }
-
-      /* Main container for layout */
-      .container {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 10px; /* Reduced padding */
-        gap: 15px; /* Reduced gap between sections */
-        box-sizing: border-box;
-      }
-
-      /* Sidebar and Main Sections */
-      .left, .middle, .right {
-        border: 1px solid #605c5c;
-        border-radius: 6px;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-      }
-
-      .left {
-        width: 15%;
-        min-height: 400px;
-        padding: 10px; /* Reduced padding */
-        text-align: center;
-        line-height: 1.4;
-        background: rgba(20, 20, 20, 0.5); /* 50% opaque */
-      }
-
-      .middle {
-        flex: 1;
-        min-height: 600px;
-        padding: 15px; /* Reduced padding */
-        line-height: 1.4;
-        background: rgba(20, 20, 20, 0.3); /* 50% opaque */
-      }
-
-      .right {
-        width: 15%;
-        min-height: 400px;
-        padding: 10px; /* Reduced padding */
-        text-align: center;
-        line-height: 1.4;
-        background: rgba(20, 20, 20, 0.5); /* 50% opaque */
-      }
-
-      .right a {
-        color: #f0e4cc; /* Light cream links */
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .right a:hover {
-        color: #f1c40f;
-      }
-
-      /* Footer */
-      .footer {
-        text-align: center;
-        margin: 10px auto; /* Reduced margin */
-        padding: 10px;
-        background: rgba(0, 0, 0, 0.9);
-        color: #f0e4cc; /* Light cream text */
-        font-size: 0.8em;
-        width: 100%;
-      }
-
-      h2 {
-        font-size: 1.3em;
-        margin-bottom: 10px;
-        padding-bottom: 5px;
-        color: #f0e4cc; /* Light cream text */
-      }
-
-      p {
-        margin: 8px 0;
-        font-size: 0.9em;
-        color: #f0e4cc; /* Light cream text */
-      }
-
-      /* PayPal-like Button Style */
-      .dbox-donation-page-button {
-        background-color: #0070ba; /* PayPal blue color */
-        color: white;
-        font-size: 16px; /* Larger text for better visibility */
-        padding: 10px 20px; /* Increased padding */
-        border: none;
-        border-radius: 50px; /* Rounded corners */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px; /* Space between text and icon */
-        text-decoration: none;
-        cursor: pointer;
-        width: fit-content;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.3s ease;
-      }
-
-      .dbox-donation-page-button:hover {
-        background-color: #00649d; /* Darker blue on hover */
-      }
-
-      .dbox-donation-page-button img {
-        width: 20px; /* Smaller PayPal logo */
-        height: 20px;
-      }
-
-      /* Hide Sections by Default */
-      .hidden {
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Title Bar with click action to show the main section -->
-    <div class="title-bar" onclick="showSection('main')">FROG.US.ORG</div>
-
-    <!-- Navigation Bar -->
-    <div class="container">
-      <div class="nav-bar">
-        <a href="javascript:void(0);" onclick="showSection('main')">MAIN</a> >> 
-        <a href="javascript:void(0);" onclick="showSection('info')">INFO</a> >> 
-        <a href="javascript:void(0);" onclick="showSection('contact')">CONTACT & MISC</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frog Minecraft Server</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      border-right: 2px solid #007000; /* Thinner border, darker green */
+      overflow-y: auto;
+    }
+    .sidebar {
+      background-color: #00a000; /* Darker green background */
+      width: 30%;
+    }
+    h1, p {
+      margin: 0;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .donate {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .donate button {
+      background-color: #007000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .donate button:hover {
+      background-color: #005a00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>frog.org - Minecraft anarchy server</h1>
+      <p>
+        Frog is a no-rules Minecraft server that has been running for several months and has had hundreds of players join at least once. You can hack, grief, kill, steal, and dupe while possible.
+      </p>
+      <p>
+        Frog was started 11/14/2024 at around 6:00 PM CST with the intent for a Minecraft server without any rules, no admin interference, and a map that never resets.
+      </p>
+      <p>
+        <strong>Version:</strong> 1.12.2 (You can join using 1.12.2 - 1.21.4)<br>
+        <strong>IP:</strong> frog.us.org<br>
+        <em>*The server is not cracked and does not support Bedrock players.</em>
+      </p>
+      <div class="donate">
+        <button>Donate via PayPal</button>
       </div>
     </div>
-
-    <!-- Main Layout -->
-    <div class="container">
-      <!-- Left Sidebar -->
-      <!-- Left Sidebar -->
-<div class="left">
-  <p>You can now donate to the server for 'rewards' that do not affect your in game progress but are instead for everyone to see.</p>
-  <p>Refer to 'info' for descriptions and pricings.</p>
-  <!-- PayPal-like DonorBox Donation Button -->
-  <a class="donate" href="https://donorbox.org/frog-1">
-    <img src="donate" alt="Donate Icon">
-    
-  </a>
-</div>
-
-      <!-- Main Section -->
-      <div class="middle hidden" id="main">
-        <h4>frog</h4>
-        <p>frog is a Minecraft server that promises vanilla survival gameplay with PvP, a never-ending world, and no rules. The IP is frog.us.org. It has been on the same world since November 2024.</p>
-        <h4>News</h4>
-        <p>1/19/25: If you want 1.20+ please load 10k 10k of the overworld and nether 1.12.2 chunks and get 1000 players joining at least once. do /stats in game for more information.</p>
-        <p>Website last updated 19th january 2025.</p>
-      </div>
-
-      <!-- Info Section -->
-      <div class="middle hidden" id="info">
-        <h3>Donation Rewards</h3>
-        <p>There are currently two things possible to buy:</p>
-        <ul>
-          <li>An MOTD (Message of the Day) for $3. Your MOTD is permanent, and if you send more than one, they will be considered as well (recommended).</li>
-          <li>A temporary message on the tab list for $7. The message will be there for a week.</li>
-        </ul>
-      </div>
-
-      <!-- Contact & Misc Section -->
-      <div class="middle hidden" id="contact">
-        <h4>Contact & Misc Section</h4>
-        <p>Email: <a href="mailto:2b2t.us.org@gmail.com">2b2t.us.org@gmail.com</a></p>
-        <p>Subreddit: <a href="https://reddit.com/r/2b2tus">r/2b2tus</a></p>
-        <h4>Voting Links</h4>
-        <p>Vote: <a href="https://minecraftservers.org/server/668655">1</a></p>
-        <p>Vote: <a href="https://minecraft-serverlist.com/server/1942">2</a></p>
-      </div>
-
-      <!-- Right Sidebar -->
-      <div class="right">
-        <h4></h4>
-        <p></p>
-      </div>
-    </div>
-
-    <!-- JavaScript -->
-    <script>
-      function showSection(sectionId) {
-        // Hide all sections
-        const sections = document.querySelectorAll('.middle');
-        sections.forEach(section => section.classList.add('hidden'));
-
-        // Show the selected section
-        const sectionToShow = document.getElementById(sectionId);
-        sectionToShow.classList.remove('hidden');
-      }
-
-      // Initialize to show the main section by default
-      showSection('main');
-    </script>
-  </body>
+    <div class="sidebar"></div>
+  </div>
+</body>
 </html>

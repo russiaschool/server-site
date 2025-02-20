@@ -5,101 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="dns-prefetch" href="https://cdn.craftingstore.net">
-    <link rel="icon" href="">
     <title>Frog | Home</title>
 
     <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/themes/darkly.min.css">
     <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/store.min.css">
-    <link rel="stylesheet" href="/assets/7505d64a54e061b7acd54ccd58b49dc43500b635-css/style.css?v=1739929995">
-    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
-    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
-    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
-    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
-    <style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+    <style>
+        body {
+            font-size: 14px;
+            background-color: #111;
+        }
+
+        .navbar {
+            background-color: #1f4e78;
+            border: none;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            background-color: #222;
+            color: #fff;
+            width: 200px;
+            padding: 15px;
+            border-right: 1px solid #333;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .sidebar h4 {
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+            color: #ddd;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            color: #ddd;
+        }
+
+        .card-header {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-body {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-
 <body>
-
-<!-- container -->
-<div class="container">
-
-    <!-- header -->
-    <div class="header">
-        <div class="logo">
-            <a href="/"></a>
-        </div>
-    </div>
-
-    <!-- nav -->
-    <nav class="navbar navbar-default">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/checkout/basket">Shop</a></li>
-                </ul>
-            </div>
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Shop</a>
         </div>
     </nav>
 
-    <!-- content -->
-    <div class="row">
-        <div class="col-lg-12 col-xs-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <p></p>
-                    <h3>Welcome<span style="font-size: 24px;"></span>
-                        <span style="font-size: 10px;">
-                            <span style="font-size: 14px;">
-                                <span style="font-size: 16px;">
-                                    <strong><br>Welcome to the official website for Frog.<br>Frog is no-rules Minecraft server.<br>
-                                    <span style="font-size: 24px;"><br>Frog</span>
-                                    <strong><span style="font-size: 24px;"></span></strong>
-                                    </strong></strong></strong>
-                                </span>
-                            </span>
-                        </span>
-                    </h3>
-                    <h3><span style="font-size: 10px;">
-                        <span style="font-size: 14px;">
-                            <span style="font-size: 16px;">
-                                <strong>Frog is no-rules Minecraft server. The map has never reset</strong>
-                            </span>
-                        </span>
-                    </span></h3>
-                    <h3><span style="font-size: 16px;"><strong>You can join using versions 1.12.2-1.21+ (native 1.12.2)</strong></span></h3>
-                    <div>
-                        <span style="font-size: 10px;">
-                            <span style="font-size: 14px;">
-                                <span style="font-size: 16px;">We are currently working on updating the server to 1.20. Thank you for your support<br></span>
-                            </span>
-                        </span>
-                    </div>
+    <!-- Content Layout -->
+    <div class="content-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h4>Example Sidebar</h4>
+            <ul>
+                <li>Example Link 1</li>
+                <li>Example Link 2</li>
+                <li>Example Link 3</li>
+                <li>Example Link 4</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="card">
+                <div class="card-header">Welcome</div>
+                <div class="card-body">
+                    Welcome to the official website for Frog.<br>
+                    Frog is a no-rules Minecraft server. The map has never reset.
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-header">Frog</div>
+                <div class="card-body">
+                    Frog is a no-rules Minecraft server. The map has never reset.<br>
+                    You can join using versions <strong>1.12.2-1.21+</strong> (native 1.12.2).<br>
+                    We are currently working on updating the server to 1.20. Thank you for your support.
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.craftingstore.net/assets/shops/js/jquery.min.js" data-no-instant=""></script>
-    <script src="https://cdn.craftingstore.net/assets/shops/js/bootstrap.min.js" data-no-instant=""></script>
-    <script src="https://cdn.craftingstore.net/assets/shops/js/store.js?v=1" data-no-instant=""></script>
-    
-    <!-- footer -->
-    <footer class="footer">
-    </footer>
-
-</div>
+    <script src="https://cdn.craftingstore.net/assets/shops/js/jquery.min.js"></script>
+    <script src="https://cdn.craftingstore.net/assets/shops/js/bootstrap.min.js"></script>
 </body>
 </html>

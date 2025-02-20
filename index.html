@@ -25,33 +25,21 @@
 
         .content-wrapper {
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
             margin-top: 20px;
             padding: 0 15px;
         }
 
         .sidebar {
-            background-color: #222;
             width: 20%;
             padding: 15px;
-            margin-right: 15px;
+            background-color: #222;
             border-radius: 8px;
         }
 
-        .sidebar h4 {
-            color: #ccc;
-            margin-bottom: 15px;
-        }
-
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            margin: 10px 0;
-            color: #aaa;
+        .separator {
+            width: 1px;
+            background-color: #444;
+            margin: 0 15px;
         }
 
         .main-content {
@@ -62,7 +50,6 @@
             background-color: #1c1c1c;
             border: none;
             border-radius: 8px;
-            margin-bottom: 15px;
             padding: 15px;
         }
 
@@ -91,13 +78,11 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <h4>Example Sidebar</h4>
-            <ul>
-                <li>Example Link 1</li>
-                <li>Example Link 2</li>
-                <li>Example Link 3</li>
-                <li>Example Link 4</li>
-            </ul>
+            <p>Example text for the sidebar. Add whatever content you'd like here.</p>
         </div>
+
+        <!-- Separator -->
+        <div class="separator"></div>
 
         <!-- Main Content -->
         <div class="main-content">

@@ -1,82 +1,79 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frog Minecraft Server">
     <meta name="author" content="">
     <title>Frog | Home</title>
-
     <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/themes/darkly.min.css">
-    <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/store.min.css">
     <style>
         body {
-            font-size: 14px;
             background-color: #111;
+            color: #ddd;
+            font-family: Arial, sans-serif;
         }
 
         .navbar {
             background-color: #1f4e78;
-            border: none;
         }
 
         .navbar a {
             color: white;
+            text-decoration: none;
         }
 
-        .content-container {
+        .content-wrapper {
             display: flex;
-            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
             margin-top: 20px;
+            padding: 0 15px;
         }
 
         .sidebar {
             background-color: #222;
-            color: #fff;
-            width: 200px;
+            width: 20%;
             padding: 15px;
-            border-right: 1px solid #333;
-            height: 100vh;
-            position: fixed;
+            margin-right: 15px;
+            border-radius: 8px;
         }
 
         .sidebar h4 {
-            color: #ddd;
+            color: #ccc;
             margin-bottom: 15px;
         }
 
         .sidebar ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
 
         .sidebar ul li {
             margin: 10px 0;
+            color: #aaa;
         }
 
         .main-content {
-            margin-left: 220px;
-            padding: 20px;
-            color: #ddd;
+            width: 75%;
         }
 
         .card {
             background-color: #1c1c1c;
             border: none;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            color: #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
         }
 
-        .card-header {
-            font-size: 18px;
-            font-weight: bold;
+        .card h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
 
-        .card-body {
-            font-size: 14px;
-            line-height: 1.6;
+        .card p {
+            font-size: 1rem;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -89,8 +86,8 @@
         </div>
     </nav>
 
-    <!-- Content Layout -->
-    <div class="content-container">
+    <!-- Content -->
+    <div class="content-wrapper">
         <!-- Sidebar -->
         <div class="sidebar">
             <h4>Example Sidebar</h4>
@@ -105,24 +102,17 @@
         <!-- Main Content -->
         <div class="main-content">
             <div class="card">
-                <div class="card-header">Welcome</div>
-                <div class="card-body">
-                    Welcome to the official website for Frog.<br>
-                    Frog is a no-rules Minecraft server. The map has never reset.
-                </div>
+                <h1>Welcome</h1>
+                <p>Welcome to the official website for Frog.<br>
+                   Frog is a no-rules Minecraft server.</p>
             </div>
-            <div class="card mt-4">
-                <div class="card-header">Frog</div>
-                <div class="card-body">
-                    Frog is a no-rules Minecraft server. The map has never reset.<br>
-                    You can join using versions <strong>1.12.2-1.21+</strong> (native 1.12.2).<br>
-                    We are currently working on updating the server to 1.20. Thank you for your support.
-                </div>
+            <div class="card">
+                <h1>Frog</h1>
+                <p>Frog is a no-rules Minecraft server. The map has never reset.<br>
+                   You can join using versions <strong>1.12.2-1.21+</strong> (native 1.12.2).<br>
+                   We are currently working on updating the server to 1.20. Thank you for your support.</p>
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.craftingstore.net/assets/shops/js/jquery.min.js"></script>
-    <script src="https://cdn.craftingstore.net/assets/shops/js/bootstrap.min.js"></script>
 </body>
 </html>

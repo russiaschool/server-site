@@ -1,106 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="dns-prefetch" href="https://cdn.craftingstore.net">
-    <link rel="icon" href="">
-    <title>Frog | Home</title>
-
-    <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/themes/darkly.min.css">
-    <link rel="stylesheet" href="https://cdn.craftingstore.net/assets/shops/css/store.min.css">
-    <link rel="stylesheet" href="/assets/7505d64a54e061b7acd54ccd58b49dc43500b635-css/style.css?v=1739929995">
-    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
-    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
-    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
-    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
-    <style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .like-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .info {
+            margin-top: 20px;
+        }
+        .info div {
+            margin-bottom: 10px;
+        }
+        .map {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .player-history {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>froggot.org</h1>
+            <button class="like-button">❤️ Like</button>
+        </div>
 
-<!-- container -->
-<div class="container">
+        <div class="info">
+            <div><strong>Server Address:</strong> froggot.org</div>
+            <div><strong>Version:</strong> Paper 1.12.2</div>
+            <div><strong>Uptime:</strong> 100.0%</div>
+            <div><strong>Location:</strong> Christ Church, Barbados</div>
+            <div><strong>Distance (Ping):</strong> 4168 km (~83 ms)</div>
+        </div>
 
-    <!-- header -->
-    <div class="header">
-        <div class="logo">
-            <a href="/"></a>
+        <div class="map">
+            <img src="https://via.placeholder.com/600x300" alt="Map Placeholder" />
+        </div>
+
+        <div class="player-history">
+            <h3>Player History</h3>
+            <img src="https://via.placeholder.com/600x150" alt="Player History Placeholder" />
         </div>
     </div>
-
-    <!-- nav -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/checkout/basket">Shop</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- content -->
-    <div class="row">
-        <div class="col-lg-12 col-xs-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <p></p>
-                    <h3>Welcome<span style="font-size: 24px;"></span>
-                        <span style="font-size: 10px;">
-                            <span style="font-size: 14px;">
-                                <span style="font-size: 16px;">
-                                    <br><br>
-                                    <strong><br>Welcome to the official website for Frog.<br>Frog is no-rules Minecraft server.<br>
-                                    <span style="font-size: 24px;"><br>Frog</span>
-                                    <strong><span style="font-size: 24px;"></span></strong>
-                                    </strong></strong></strong>
-                                </span>
-                            </span>
-                        </span>
-                    </h3>
-                    <h3><span style="font-size: 10px;">
-                        <span style="font-size: 14px;">
-                            <span style="font-size: 16px;">
-                                <strong>Frog is no-rules Minecraft server. The map has never reset</strong>
-                            </span>
-                        </span>
-                    </span></h3>
-                    <h3><span style="font-size: 16px;"><strong>You can join using versions 1.12.2-1.21+ (native 1.12.2)</strong></span></h3>
-                    <div>
-                        <span style="font-size: 10px;">
-                            <span style="font-size: 14px;">
-                                <span style="font-size: 16px;">We are currently working on updating the server to 1.20. Thank you for your support<br></span>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.craftingstore.net/assets/shops/js/jquery.min.js" data-no-instant=""></script>
-    <script src="https://cdn.craftingstore.net/assets/shops/js/bootstrap.min.js" data-no-instant=""></script>
-    <script src="https://cdn.craftingstore.net/assets/shops/js/store.js?v=1" data-no-instant=""></script>
-    
-    <!-- footer -->
-    <footer class="footer">
-    </footer>
-
-</div>
 </body>
 </html>

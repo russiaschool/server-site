@@ -23,12 +23,15 @@
         }
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* Align to the left */
             align-items: center;
-            flex-direction: column; /* Stack the buttons vertically */
         }
         .header h1 {
-            margin: 0;
+            margin-right: 20px; /* Add some space to the right of the header */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
         }
         .button {
             background-color: #58B55C;
@@ -65,9 +68,11 @@
     <div class="container">
         <div class="header">
             <h1>froggot.org</h1>
-            <button class="button donate-button">❤️ Donate</button>
-            <button class="button reddit-button">🤖 Subreddit</button>
-            <button class="button discord-button">Discord</button>
+            <div class="button-container">
+                <button class="button donate-button">❤️ Donate</button>
+                <button class="button reddit-button">🤖 Subreddit</button>
+                <button class="button discord-button">Discord</button>
+            </div>
         </div>
 
         <div class="info">

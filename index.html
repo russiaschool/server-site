@@ -1,59 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Froggot.org - Minecraft Anarchy Server</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Froggot</div>
-        <nav>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#info">Infos</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#donation">Donation</a></li>
-                <li><a href="#wiki">Wiki</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="banner">
-        <div class="banner-content">
-            <h2>JOIN FROGGOT MINECRAFT ANARCHY SERVER</h2>
-            <p>No Rules, No Limits! The ultimate Minecraft anarchy experience.</p>
-        </div>
-    </section>
-    
-    <div class="container">
-        <section id="intro" class="box">
-            <h2>Introduction</h2>
-            <p>Froggot.org is a Minecraft anarchy server where anything goes. The server started on November 14th, 2024, and has been running ever since.</p>
-        </section>
-        
-        <section id="video" class="box">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
-        </section>
-    </div>
-    
-    <div class="container">
-        <section id="stats" class="box">
-            <h2>Server Statistics</h2>
-            <p>Players Joined: <span id="player-count">Loading...</span></p>
-        </section>
-        
-        <section id="discord" class="box">
-            <h2>Join Our Discord</h2>
-            <p>Online Members: <span id="discord-members">Loading...</span></p>
-        </section>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 Froggot.org. All rights reserved.</p>
-    </footer>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+/* General Styles */
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff80;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #00ff80;
+    color: #1e1e1e;
+}
+
+/* Banner */
+#banner {
+    background: url('banner-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 18px;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 128, 0.3);
+    margin: 10px;
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2d2d2d;
+    padding: 10px;
+    margin-top: 20px;
+}

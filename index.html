@@ -3,166 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frog</title>
-  <link rel="icon" type="image/png" href="server-icon.png">
+  <title>Velira.org - Anarchy Minecraft Server</title>
   <style>
-    /* Basic reset */
+    /* Basic Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: #eee;
-      line-height: 1.6;
-    }
-    
-    /* Main container */
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 2rem auto;
-    }
-    
-    /* Navigation bar placed at the top of the container */
-    .navbar {
-      background: #1e1e1e;
-      padding: 1rem;
-      border-bottom: 1px solid #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('your-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
       display: flex;
-      align-items: center;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      display: flex;
       justify-content: space-between;
+      align-items: center;
     }
-    
-    .navbar h1 {
-      font-size: 2rem;
-      color: #fff;
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #6cfaff;
     }
-    
-    .navbar nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-    
-    .navbar nav ul li a {
+
+    nav a {
+      color: #eee;
+      margin-left: 1.5rem;
       text-decoration: none;
-      color: #ddd;
-      padding: 0.5rem;
       transition: color 0.3s ease;
     }
-    
-    .navbar nav ul li a:hover,
-    .navbar nav ul li a.shop-button {
-      color: #fff;
+
+    nav a:hover {
+      color: #6cfaff;
     }
-    
-    /* Layout for main content and sidebar */
-    .content {
+
+    .hero {
+      flex: 1;
       display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
     }
-    
-    /* Update section styles (made square with no border radius) */
-    .update {
-      flex: 1 1 60%;
-      background: #1e1e1e;
-      padding: 1.5rem;
-      border-radius: 0;
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #6cfaff;
     }
-    
-    .update .date {
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .ip-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem 2rem;
+      border: 1px solid #6cfaff;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      user-select: all;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .ip-box:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 1rem;
       font-size: 0.9rem;
-      color: #aaa;
     }
-    
-    .update h2 {
-      margin: 0.5rem 0;
-      color: #fff;
-    }
-    
-    .update p {
-      margin-bottom: 1rem;
-    }
-    
-    /* Server info sidebar styles (made square with no border radius) */
-    .server-info {
-      flex: 1 1 35%;
-      background: #1e1e1e;
-      padding: 1.5rem;
-      border-radius: 0;
-    }
-    
-    .server-info h3 {
-      margin-bottom: 0.5rem;
-      color: #fff;
-    }
-    
-    .server-info p {
-      margin-bottom: 1rem;
-    }
-    
-    .player-count {
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    
-    .connect-button {
-      display: inline-block;
-      text-decoration: none;
-      background: #3a3a3a;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 0;
-      transition: background 0.3s ease;
-    }
-    
-    .connect-button:hover {
-      background: #555;
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .content {
-        flex-direction: column;
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
       }
-      
-      .navbar nav ul {
-        flex-wrap: wrap;
+
+      nav {
+        font-size: 0.9rem;
+      }
+
+      .ip-box {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Navigation bar moved inside the container at the top -->
-    <div class="navbar">
-      <h1>Frog</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-        </ul>
-      </nav>
-    </div>
-    
-    <div class="content">
-      <section class="update">
-        <span class="date">23 March 2025</span>
-        <h2>1.20</h2>
-        <p>planned time test time April 1st 2025. estimate update time May 22 2025 (could be sooner). There will be no dupes on 1.20.4, if you want items dupe now while the server is on 1.12.2.</p>
-        <p></p>
-      </section>
-      <aside class="server-info">
-        <h3>FROG</h3>
-        <p>Frog is a Minecraft survival server with no rules and no resets.</p>
-        <a href="#" class="connect-button">Connect: 0FROG.ORG</a>
-      </aside>
-    </div>
-  </div>
+  <header>
+    <div class="logo">Velira.org</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Join</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Velira</h1>
+    <p>A raw and unforgiving Minecraft anarchy server. No rules, no resets, just chaos.</p>
+    <div class="ip-box" onclick="copyIP()">velira.org</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Velira.org — Minecraft Anarchy Server
+  </footer>
+
+  <script>
+    function copyIP() {
+      navigator.clipboard.writeText('velira.org');
+      alert('Server IP copied to clipboard!');
+    }
+  </script>
 </body>
 </html>

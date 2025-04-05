@@ -39,8 +39,15 @@
       border-radius: 10px;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
       margin: 1rem auto;
-      display: inline-block;
       color: #fff;
+    }
+
+    .info-box.small {
+      max-width: 500px;
+    }
+
+    .info-box.large {
+      max-width: 700px;
     }
 
     .info-box strong {
@@ -83,23 +90,14 @@
   <div class="container">
     <h1>Velira.org</h1>
 
-    <div class="info-box">
+    <div class="info-box small">
       <strong>Want to join the server?</strong>
       Minecraft version 1.7.2 - 1.20.5 (no rules, no whitelist).<br>
       IP: <span id="server-ip">velira.org</span><br>
       <button class="copy-btn" onclick="copyIP()">Copy IP</button>
     </div>
 
-    <div class="info-box">
-      <strong>Live Server Stats</strong>
-      Online Players: 0<br>
-      Max Players: 100<br>
-      TPS: 20.0<br>
-      Uptime: 100%<br>
-      <em>(These can be linked to live data later)</em>
-    </div>
-
-    <div class="info-box">
+    <div class="info-box large">
       <strong>Server Information</strong>
       Founded: November 14, 2024<br>
       Current age: 5 months<br>

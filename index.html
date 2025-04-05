@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,7 @@
 
     .top-bar {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       padding: 1rem 2rem 0;
     }
 
@@ -32,11 +33,11 @@
       gap: 0.5rem;
       background-color: #5865f2;
       color: white;
-      padding: 0.25rem 0.75rem;
+      padding: 0.5rem 1rem;
       border: none;
       border-radius: 6px;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 1rem;
       transition: background 0.3s ease;
     }
 
@@ -59,12 +60,7 @@
     h1 {
       font-size: 3rem;
       font-weight: bold;
-      margin-bottom: 1.5rem;
-      text-align: left;
-      margin-left: 10px;
-      position: absolute;
-      top: 20px;
-      left: 20px;
+      margin-bottom: 2rem;
     }
 
     .info-box {
@@ -74,16 +70,14 @@
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
       margin: 1rem auto;
       color: #fff;
-      width: 90%;  /* Set width to 90% for wider box by default */
-      max-width: 1500px; /* Allow it to be wider but with a max limit */
-      display: flex;
-      justify-content: space-between;
-      text-align: left;
     }
 
-    .info-box .left,
-    .info-box .right {
-      width: 45%;
+    .info-box.small {
+      max-width: 500px;
+    }
+
+    .info-box.large {
+      max-width: 1000px;
     }
 
     .info-box strong {
@@ -124,7 +118,6 @@
 </head>
 <body>
   <div class="top-bar">
-    <h1>Velira.org</h1>
     <a class="discord-btn" href="https://discord.gg/pAktNF7P6x" target="_blank">
       <img src="108-1083749_white-discord-logo-png-png-free-discord-icon-removebg-preview.png" alt="Discord" />
       Discord
@@ -132,19 +125,21 @@
   </div>
 
   <div class="container">
-    <div class="info-box">
-      <div class="left">
-        <strong>Want to join the server?</strong>
-        Join using versions 1.12.2 - 1.21.4 <br>
-        IP: <span id="server-ip">velira.org</span><br>
-        <button class="copy-btn" onclick="copyIP()">Copy IP</button>
-      </div>
-      <div class="right">
-        <strong>Server Information</strong>
-        Start Date: November 14, 2024<br>
-        Server IP: Velira.org<br>
-        Version: 1.12.2<br>
-      </div>
+    <h1>Velira.org</h1>
+
+    <div class="info-box small">
+      <strong>Want to join the server?</strong>
+      Minecraft version 1.7.2 - 1.20.5 (no rules, no whitelist).<br>
+      IP: <span id="server-ip">velira.org</span><br>
+      <button class="copy-btn" onclick="copyIP()">Copy IP</button>
+    </div>
+
+    <div class="info-box large">
+      <strong>Server Information</strong>
+      Founded: November 14, 2024<br>
+      Current age: 5 months<br>
+      World border: Unlimited<br>
+      Preloaded: 25k x 25k (Overworld, Nether, End)
     </div>
   </div>
 

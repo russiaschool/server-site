@@ -64,19 +64,13 @@
 
     .info-box {
       background: rgba(30, 30, 30, 0.85);
-      padding: 1rem 2rem;
+      padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
       margin: 1rem auto;
       color: #fff;
-    }
-
-    .info-box.small {
-      max-width: 500px;
-    }
-
-    .info-box.large {
       max-width: 1000px;
+      text-align: left;
     }
 
     .info-box strong {
@@ -99,29 +93,6 @@
 
     .copy-btn:hover {
       background-color: #125ecf;
-    }
-
-    .news-container {
-      background: rgba(30, 30, 30, 0.85);
-      padding: 2rem;
-      margin: 2rem 0;
-      border-radius: 10px;
-      color: #fff;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .news-container img {
-      max-width: 200px;
-      border-radius: 8px;
-    }
-
-    .news-container .content {
-      max-width: 800px;
-      text-align: left;
     }
 
     .spacer {
@@ -149,28 +120,19 @@
   <div class="container">
     <h1>Velira.org</h1>
 
-    <div class="info-box small">
+    <!-- Combined Info Box -->
+    <div class="info-box">
       <strong>Want to join the server?</strong>
-      Minecraft version 1.7.2 - 1.20.5 (no rules, no whitelist).<br>
+      Join using versions 1.12.2 - 1.21.4 <br>
       IP: <span id="server-ip">velira.org</span><br>
       <button class="copy-btn" onclick="copyIP()">Copy IP</button>
-    </div>
 
-    <div class="info-box large">
+      <hr>
+
       <strong>Server Information</strong>
-      Founded: November 14, 2024<br>
-      Current age: 5 months<br>
-      World border: Unlimited<br>
-      Preloaded: 25k x 25k (Overworld, Nether, End)
-    </div>
-
-    <!-- News Container -->
-    <div class="news-container">
-      <img src="your-image.jpg" alt="News Image" />
-      <div class="content">
-        <strong>Latest News</strong>
-        <p>We're launching a new event on the server this weekend! Come join us for exciting activities and rewards.</p>
-      </div>
+      Start Date: November 14, 2024<br>
+      Server IP: Velira.org<br>
+      Version: 1.12.2<br>
     </div>
   </div>
 

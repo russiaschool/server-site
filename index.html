@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,6 +101,32 @@
       background-color: #125ecf;
     }
 
+    .news-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .news-article {
+      background: rgba(30, 30, 30, 0.85);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .news-article img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+
+    .news-article .content {
+      flex: 1;
+    }
+
     .spacer {
       flex-grow: 1;
     }
@@ -140,6 +165,29 @@
       Current age: 5 months<br>
       World border: Unlimited<br>
       Preloaded: 25k x 25k (Overworld, Nether, End)
+    </div>
+
+    <!-- News Container -->
+    <div class="news-container">
+      <!-- Article 1 -->
+      <div class="news-article">
+        <img src="your-image1.jpg" alt="Article 1 Image" />
+        <div class="content">
+          <h3>Article 1 Title</h3>
+          <p>Summary or excerpt of the article goes here. This can be a preview of the news content.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="news-article">
+        <img src="your-image2.jpg" alt="Article 2 Image" />
+        <div class="content">
+          <h3>Article 2 Title</h3>
+          <p>Summary or excerpt of the second article. You can add as many articles as you like here.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
     </div>
   </div>
 

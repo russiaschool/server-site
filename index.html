@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Velira.org - Anarchy Server</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #fff url('your-background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
@@ -31,7 +38,7 @@
       padding: 1rem 2rem;
       border-radius: 10px;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
+      margin: 1rem auto;
       display: inline-block;
     }
 
@@ -40,22 +47,39 @@
       margin-bottom: 0.5rem;
     }
 
+    .spacer {
+      flex-grow: 1;
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
-      color: #555;
       font-size: 0.9rem;
+      color: #555;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Velira.org</h1>
+
     <div class="info-box">
       <strong>Want to join the server?</strong>
       Minecraft version 1.7.2 - 1.20.5 (no rules, no whitelist). IP: <strong>velira.org</strong>
     </div>
+
+    <div class="info-box">
+      <strong>Server Information</strong>
+      Founded: November 14, 2024<br>
+      Current age: 5 months<br>
+      World border: Unlimited<br>
+      Preloaded: 25k x 25k (Overworld, Nether, End)
+    </div>
   </div>
+
+  <div class="spacer"></div>
 
   <footer>
     &copy; 2025 Velira.org — Anarchy Minecraft Server

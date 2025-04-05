@@ -70,7 +70,14 @@
       margin: 1rem auto;
       color: #fff;
       max-width: 1000px;
+      display: flex;
+      justify-content: space-between;
       text-align: left;
+    }
+
+    .info-box .left,
+    .info-box .right {
+      width: 45%;
     }
 
     .info-box strong {
@@ -120,19 +127,20 @@
   <div class="container">
     <h1>Velira.org</h1>
 
-    <!-- Combined Info Box -->
+    <!-- Combined and wide Info Box -->
     <div class="info-box">
-      <strong>Want to join the server?</strong>
-      Join using versions 1.12.2 - 1.21.4 <br>
-      IP: <span id="server-ip">velira.org</span><br>
-      <button class="copy-btn" onclick="copyIP()">Copy IP</button>
-
-      <hr>
-
-      <strong>Server Information</strong>
-      Start Date: November 14, 2024<br>
-      Server IP: Velira.org<br>
-      Version: 1.12.2<br>
+      <div class="left">
+        <strong>Want to join the server?</strong>
+        Join using versions 1.12.2 - 1.21.4 <br>
+        IP: <span id="server-ip">velira.org</span><br>
+        <button class="copy-btn" onclick="copyIP()">Copy IP</button>
+      </div>
+      <div class="right">
+        <strong>Server Information</strong>
+        Start Date: November 14, 2024<br>
+        Server IP: Velira.org<br>
+        Version: 1.12.2<br>
+      </div>
     </div>
   </div>
 

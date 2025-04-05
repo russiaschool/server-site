@@ -47,6 +47,22 @@
       margin-bottom: 0.5rem;
     }
 
+    .copy-btn {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .copy-btn:hover {
+      background-color: #0056b3;
+    }
+
     .spacer {
       flex-grow: 1;
     }
@@ -67,7 +83,9 @@
 
     <div class="info-box">
       <strong>Want to join the server?</strong>
-      Minecraft version 1.7.2 - 1.20.5 (no rules, no whitelist). IP: <strong>velira.org</strong>
+      Minecraft version 1.7.2 - 1.20.5 (no rules, no whitelist).<br>
+      IP: <span id="server-ip">velira.org</span><br>
+      <button class="copy-btn" onclick="copyIP()">Copy IP</button>
     </div>
 
     <div class="info-box">
@@ -84,5 +102,16 @@
   <footer>
     &copy; 2025 Velira.org — Anarchy Minecraft Server
   </footer>
+
+  <script>
+    function copyIP() {
+      const ip = document.getElementById("server-ip").innerText;
+      navigator.clipboard.writeText(ip).then(() => {
+        alert("IP copied to clipboard: " + ip);
+      }).catch(err => {
+        alert("Failed to copy IP.");
+      });
+    }
+  </script>
 </body>
 </html>

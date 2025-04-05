@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Velira.org - Anarchy Server</title>
+  <link href="https://unpkg.com/lucide@latest/dist/lu.min.css" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -18,6 +19,28 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 2rem 0;
+    }
+
+    .icon-bar {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .icon-bar i {
+      color: #aaa;
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .icon-bar i:hover {
+      color: #fff;
     }
 
     .container {
@@ -57,7 +80,7 @@
     }
 
     .copy-btn {
-      background-color: #898989;
+      background-color: #1a73e8;
       border: none;
       color: white;
       padding: 0.5rem 1rem;
@@ -69,7 +92,7 @@
     }
 
     .copy-btn:hover {
-      background-color: #888888;
+      background-color: #125ecf;
     }
 
     .spacer {
@@ -87,6 +110,15 @@
   </style>
 </head>
 <body>
+  <div class="top-bar">
+    <div class="icon-bar">
+      <i class="lu lu-discord" title="Discord"></i>
+      <i class="lu lu-gamepad" title="Server Info"></i>
+      <i class="lu lu-calendar" title="Events"></i>
+      <i class="lu lu-loader" title="Status"></i>
+    </div>
+  </div>
+
   <div class="container">
     <h1>Velira.org</h1>
 
@@ -98,10 +130,11 @@
     </div>
 
     <div class="info-box large">
-      <strong>Statistics</strong>
-      The server's map was created November 14th, 2024. The world has a 30 million by 30 million border.<br>
+      <strong>Server Information</strong>
+      Founded: November 14, 2024<br>
       Current age: 5 months<br>
       World border: Unlimited<br>
+      Preloaded: 25k x 25k (Overworld, Nether, End)
     </div>
   </div>
 

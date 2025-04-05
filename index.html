@@ -12,9 +12,9 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff url('your-background.jpg') no-repeat center center fixed;
+      background: #0d0d0d url('your-background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #000;
+      color: #eaeaea;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
@@ -34,21 +34,23 @@
     }
 
     .info-box {
-      background: #f1f1f1;
+      background: rgba(30, 30, 30, 0.85);
       padding: 1rem 2rem;
       border-radius: 10px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
       margin: 1rem auto;
       display: inline-block;
+      color: #fff;
     }
 
     .info-box strong {
       display: block;
       margin-bottom: 0.5rem;
+      font-size: 1.1rem;
     }
 
     .copy-btn {
-      background-color: #007bff;
+      background-color: #1a73e8;
       border: none;
       color: white;
       padding: 0.5rem 1rem;
@@ -60,7 +62,7 @@
     }
 
     .copy-btn:hover {
-      background-color: #0056b3;
+      background-color: #125ecf;
     }
 
     .spacer {
@@ -71,9 +73,9 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      color: #555;
-      background-color: rgba(255, 255, 255, 0.8);
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+      color: #aaa;
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
     }
   </style>
 </head>
@@ -86,6 +88,15 @@
       Minecraft version 1.7.2 - 1.20.5 (no rules, no whitelist).<br>
       IP: <span id="server-ip">velira.org</span><br>
       <button class="copy-btn" onclick="copyIP()">Copy IP</button>
+    </div>
+
+    <div class="info-box">
+      <strong>Live Server Stats</strong>
+      Online Players: 0<br>
+      Max Players: 100<br>
+      TPS: 20.0<br>
+      Uptime: 100%<br>
+      <em>(These can be linked to live data later)</em>
     </div>
 
     <div class="info-box">

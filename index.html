@@ -63,19 +63,22 @@
       text-align: left;
     }
 
-    /* Main info-box with original styling */
+    /* Info-box container */
+    .info-box-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    /* Main info-box styling */
     .info-box {
       background: rgba(30, 30, 30, 0.85);
       padding: 1rem 2rem;
       border-radius: 10px;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-      margin: 1rem auto;
       color: #fff;
-    }
-
-    .info-box.small {
       max-width: 1000px;
-      margin-left: 0;
+      width: 100%;
     }
 
     .info-box strong {
@@ -142,10 +145,12 @@
   <div class="container">
     <h1>Velira.org</h1>
 
-    <!-- Main info-box with original styling -->
-    <div class="info-box small">
-      <strong>Want to join the server?</strong>
-      Minecraft versions 1.12.2 - 1.21.4. Join using IP: velira.org<br>
+    <!-- Info-box Container -->
+    <div class="info-box-container">
+      <div class="info-box">
+        <strong>Want to join the server?</strong>
+        Minecraft versions 1.12.2 - 1.21.4. Join using IP: velira.org<br>
+      </div>
     </div>
 
     <!-- News Container -->

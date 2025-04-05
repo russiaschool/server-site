@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Velira.org - Anarchy Server</title>
+  <title>Velira</title>
   <style>
     * {
       box-sizing: border-box;
@@ -101,6 +101,29 @@
       background-color: #125ecf;
     }
 
+    .news-container {
+      background: rgba(30, 30, 30, 0.85);
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .news-container img {
+      max-width: 200px;
+      border-radius: 8px;
+    }
+
+    .news-container .content {
+      max-width: 800px;
+      text-align: left;
+    }
+
     .spacer {
       flex-grow: 1;
     }
@@ -139,6 +162,15 @@
       Current age: 5 months<br>
       World border: Unlimited<br>
       Preloaded: 25k x 25k (Overworld, Nether, End)
+    </div>
+
+    <!-- News Container -->
+    <div class="news-container">
+      <img src="your-image.jpg" alt="News Image" />
+      <div class="content">
+        <strong>Latest News</strong>
+        <p>We're launching a new event on the server this weekend! Come join us for exciting activities and rewards.</p>
+      </div>
     </div>
   </div>
 

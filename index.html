@@ -16,7 +16,6 @@
       color: #fff;
     }
 
-    /* Top Bar */
     .top-bar {
       display: flex;
       justify-content: space-between;
@@ -42,25 +41,25 @@
     }
 
     .top-icons img {
-      width: 31px;
+      width: 24px;
       height: 24px;
       opacity: 0.7;
       cursor: pointer;
     }
 
-    /* Main Content Spacing */
-    .content {
-      margin-top: 4rem;
+    .main-heading {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 2rem 2rem 1rem;
     }
 
-    /* IP Box */
     .ip-banner {
       background-color: #f2f2f2;
       color: #111;
       padding: 1rem;
       border-radius: 5px;
       max-width: 800px;
-      margin: 0 auto 2rem;
+      margin: 2rem auto;
       font-size: 1rem;
     }
 
@@ -70,33 +69,31 @@
       margin-bottom: 0.2rem;
     }
 
-    /* Articles */
     .articles {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      padding: 0 2rem 4rem;
-      max-width: 800px;
-      margin: 0 auto;
+      gap: 1rem;
+      padding: 0 2rem 3rem;
+      margin-top: 2rem;
     }
 
     .article {
       background-color: #1a1a1a;
       border-radius: 5px;
-      padding: 1rem;
+      padding: 0.75rem 1rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
     .article h2 {
       margin-top: 0;
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       color: #fff;
     }
 
     .article p {
       color: #ccc;
+      line-height: 1.5;
       font-size: 0.95rem;
-      line-height: 1.4;
     }
 
     .article a {
@@ -110,36 +107,31 @@
   </style>
 </head>
 <body>
-
-  <!-- Top Bar -->
   <div class="top-bar">
-    <h1>Velira</h1>
+    <h1>Velira<small>.org</small></h1>
     <div class="top-icons">
-      <img src="donate.png" alt="donate" />
-      <img src="108-1083749_white-discord-logo-png-png-free-discord-icon-removebg-preview.png" alt="discord" />
+      <img src="icon1.png" alt="icon1" />
+      <img src="icon2.png" alt="icon2" />
+      <img src="icon3.png" alt="icon3" />
+      <img src="icon4.png" alt="icon4" />
     </div>
   </div>
 
-  <div class="content">
-    <!-- IP Banner -->
-    <div class="ip-banner">
-      <strong>Want to join the server?</strong>
-      All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>velira.org</b>
-    </div>
-
-    <!-- Articles -->
-    <div class="articles">
-      <div class="article">
-        <h2>Update</h2>
-        <p>The server will be performing an update soon! There is no specified date yet though.</p>
-      </div>
-
-      <div class="article">
-        <h2>Donation</h2>
-        <p>Want to donate? There will be a website for that very, very soon.</p>
-      </div>
-    </div>
+  <div class="ip-banner">
+    <strong>Want to join the server?</strong>
+    All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>velira.org</b>
   </div>
 
+  <div class="articles">
+    <div class="article">
+      <h2>Update</h2>
+      <p>The server will be performing an update soon! There is no specified date yet though.</p>
+    </div>
+
+    <div class="article">
+      <h2>Donation</h2>
+      <p>Want to donate? There will be a website for that very, very soon</p>
+    </div>
+  </div>
 </body>
 </html>

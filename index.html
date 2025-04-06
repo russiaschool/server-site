@@ -72,12 +72,13 @@
       margin-top: 2rem;
     }
 
-    /* Thinner news cards with no background */
+    /* Smaller news cards with no background or shadow */
     .news-card {
       border-radius: 5px;
       overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-      width: 100%; /* Ensure it fills the available space */
+      width: 100%;
+      max-width: 500px; /* Make the cards smaller */
+      margin: 0 auto; /* Center the articles */
     }
 
     .news-card img {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frog</title>
+  <title>Velira</title>
   <style>
     * {
       box-sizing: border-box;
@@ -63,38 +63,30 @@
       margin-bottom: 0.2rem;
     }
 
-    /* Grid layout with 2 articles per row */
     .news-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 articles per row */
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       padding: 0 2rem 3rem;
       margin-top: 2rem;
     }
 
-    /* News cards styled to place image and text side by side with no background */
     .news-card {
-      display: flex;
-      align-items: center; /* Align the image and text in a row */
-      gap: 1rem; /* Space between image and text */
       border-radius: 5px;
       overflow: hidden;
       width: 100%;
       max-width: 500px;
-      margin: 0 auto; /* Center the articles */
-      padding: 1rem;
-      box-shadow: none; /* Remove shadow */
-      background-color: transparent; /* Remove background */
+      margin: 0 auto;
     }
 
     .news-card img {
-      width: 250px; /* Larger image size */
+      width: 100%;
       height: auto;
-      border-radius: 5px;
+      display: block;
     }
 
     .news-content {
-      flex: 1; /* Make the content take up the remaining space */
+      padding: 0.75rem;
     }
 
     .news-content h3 {
@@ -108,11 +100,26 @@
       font-size: 0.95rem;
       line-height: 1.4;
     }
+
+    .interactive-img {
+      width: 250px;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.2s ease;
+    }
+
+    .interactive-img:active {
+      transform: scale(1.05);
+    }
+
+    .interactive-img:hover {
+      transform: scale(1.03);
+    }
   </style>
 </head>
 <body>
   <div class="top-bar">
-    <h1>0frog.org</h1>
+    <h1>Velira<small>.org</small></h1>
     <div class="top-icons">
       <img src="icon1.png" alt="icon1" />
       <img src="icon2.png" alt="icon2" />
@@ -123,12 +130,14 @@
 
   <div class="ip-banner">
     <strong>Want to join the server?</strong>
-    All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>0frog.org</b>
+    All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>velira.org</b>
   </div>
 
   <div class="news-grid">
     <div class="news-card">
-      <img src="update.webp" alt="Update">
+      <a href="https://www.0frog.org/update.html">
+        <img src="update.webp" alt="Update" class="interactive-img">
+      </a>
       <div class="news-content">
         <h3>Update</h3>
         <p>The server will be performing an update...</p>
@@ -137,22 +146,22 @@
     <div class="news-card">
       <img src="screenshot2.jpg" alt="December Report">
       <div class="news-content">
-        <h3>N/a</h3>
-        <p>N/a</p>
+        <h3>December Donation Report</h3>
+        <p>Thanks to everyone who supported the server in December. We collected 2868 rubles...</p>
       </div>
     </div>
     <div class="news-card">
       <img src="screenshot3.jpg" alt="November Report">
       <div class="news-content">
-        <h3>N/a</h3>
-        <p>N/a</p>
+        <h3>November Donation Report</h3>
+        <p>Thanks to everyone who supported the server in November. We collected 3175 rubles...</p>
       </div>
     </div>
     <div class="news-card">
       <img src="screenshot4.jpg" alt="October Report">
       <div class="news-content">
-        <h3>N/a</h3>
-        <p>N/a</p>
+        <h3>October Donation Report</h3>
+        <p>Thanks to everyone who supported the server in October. We collected 2987 rubles...</p>
       </div>
     </div>
   </div>

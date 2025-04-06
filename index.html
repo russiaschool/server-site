@@ -66,21 +66,21 @@
     .news-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      padding: 0 2rem 3rem;
-      margin-top: 2rem;
+      gap: 1rem; /* Articles closer together */
+      padding: 0 2rem 2rem;
+      margin-top: 1rem;
     }
 
     .news-card {
       display: flex;
       align-items: flex-start;
-      gap: 1rem;
-      max-width: 500px;
+      gap: 0.75rem;
       margin: 0 auto;
+      max-width: 100%;
     }
 
     .news-card img {
-      width: 400px; /* increased image size */
+      width: 280px; /* Slightly bigger than before (previous 250px) */
       height: auto;
       display: block;
       transition: transform 0.3s ease;
@@ -109,6 +109,26 @@
 
     a.image-link {
       text-decoration: none;
+    }
+
+    @media (max-width: 800px) {
+      .news-grid {
+        grid-template-columns: 1fr; /* Stack on mobile */
+      }
+
+      .news-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .news-card img {
+        width: 90%;
+      }
+
+      .news-content {
+        padding: 1rem 0;
+      }
     }
   </style>
 </head>
@@ -139,7 +159,7 @@
       </div>
     </div>
     <div class="news-card">
-      <img src="Screenshot 2025-04-06 153843.png" alt="December Report">
+      <img src="Screenshot 2025-04-06 153843.png" alt="Donations">
       <div class="news-content">
         <h3>Donations</h3>
         <p>test</p>

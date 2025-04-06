@@ -48,11 +48,9 @@
       cursor: pointer;
     }
 
-    /* Header */
-    .main-heading {
-      font-size: 3rem;
-      font-weight: bold;
-      margin: 2rem 2rem 1rem;
+    /* Main Content Spacing */
+    .content {
+      margin-top: 4rem;
     }
 
     /* IP Box */
@@ -76,26 +74,29 @@
     .articles {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      padding: 0 2rem 3rem;
+      gap: 1.5rem;
+      padding: 0 2rem 4rem;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .article {
       background-color: #1a1a1a;
       border-radius: 5px;
-      padding: 1rem 1.5rem;
+      padding: 1rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
     .article h2 {
       margin-top: 0;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #fff;
     }
 
     .article p {
       color: #ccc;
-      line-height: 1.5;
+      font-size: 0.95rem;
+      line-height: 1.4;
     }
 
     .article a {
@@ -121,23 +122,26 @@
     </div>
   </div>
 
-  <!-- IP Banner -->
-  <div class="ip-banner">
-    <strong>Want to join the server?</strong>
-    All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>velira.org</b>
+  <div class="content">
+    <!-- IP Banner -->
+    <div class="ip-banner">
+      <strong>Want to join the server?</strong>
+      All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>velira.org</b>
+    </div>
+
+    <!-- Articles -->
+    <div class="articles">
+      <div class="article">
+        <h2>Update</h2>
+        <p>The server will be performing an update soon! There is no specified date yet though.</p>
+      </div>
+
+      <div class="article">
+        <h2>Donation</h2>
+        <p>Want to donate? There will be a website for that very, very soon.</p>
+      </div>
+    </div>
   </div>
-
-  <!-- Articles -->
-  <div class="articles">
-    <div class="article">
-      <h2>Update</h2>
-      <p>The server will be performing an update soon! There is no specified date yet though.</p>
-    </div>
-
-    <div class="article">
-      <h2>Donation</h2>
-      <p>Want to donate? There will be a website for that very, very soon</p>
-    </div>
 
 </body>
 </html>

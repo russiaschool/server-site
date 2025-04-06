@@ -72,7 +72,7 @@
       margin-top: 2rem;
     }
 
-    /* News cards styled to place image and text side by side */
+    /* News cards styled to place image and text side by side with no background */
     .news-card {
       display: flex;
       align-items: center; /* Align the image and text in a row */
@@ -82,13 +82,13 @@
       width: 100%;
       max-width: 500px;
       margin: 0 auto; /* Center the articles */
-      background-color: #1a1a1a;
       padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      box-shadow: none; /* Remove shadow */
+      background-color: transparent; /* Remove background */
     }
 
     .news-card img {
-      width: 150px; /* Smaller image size */
+      width: 250px; /* Larger image size */
       height: auto;
       border-radius: 5px;
     }

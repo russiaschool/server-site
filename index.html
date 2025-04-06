@@ -72,23 +72,29 @@
       margin-top: 2rem;
     }
 
-    /* Smaller news cards with no background or shadow */
+    /* News cards styled to place image and text side by side */
     .news-card {
+      display: flex;
+      align-items: center; /* Align the image and text in a row */
+      gap: 1rem; /* Space between image and text */
       border-radius: 5px;
       overflow: hidden;
       width: 100%;
-      max-width: 500px; /* Make the cards smaller */
+      max-width: 500px;
       margin: 0 auto; /* Center the articles */
+      background-color: #1a1a1a;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .news-card img {
-      width: 100%;
+      width: 150px; /* Smaller image size */
       height: auto;
-      display: block;
+      border-radius: 5px;
     }
 
     .news-content {
-      padding: 0.75rem; /* Reduced padding to make it thinner */
+      flex: 1; /* Make the content take up the remaining space */
     }
 
     .news-content h3 {

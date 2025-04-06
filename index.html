@@ -16,31 +16,27 @@
       color: #fff;
     }
 
-    /* Logo */
-    .logo {
-      font-size: 2rem;
-      font-weight: bold;
+    /* Top Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 1rem 2rem;
     }
 
-    .logo span:nth-child(1) { color: #ff00ff; } /* V */
-    .logo span:nth-child(2) { color: #ffff00; } /* E */
-    .logo span:nth-child(3) { color: #00ffff; } /* L */
-    .logo span:nth-child(4) { color: #ffffff; } /* I */
-    .logo span:nth-child(5) { color: #00ff00; } /* R */
-    .logo span:nth-child(6) { color: #ff0000; } /* A */
-    .logo small {
-      display: block;
-      font-size: 0.8rem;
-      color: #aaa;
-      margin-top: -5px;
+    .top-bar h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #fff;
     }
 
-    /* Top Right Icons */
+    .top-bar h1 small {
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-left: 5px;
+    }
+
     .top-icons {
-      position: absolute;
-      right: 2rem;
-      top: 1.5rem;
       display: flex;
       gap: 1rem;
     }
@@ -52,15 +48,11 @@
       cursor: pointer;
     }
 
-    .top-section {
-      padding: 0 2rem;
-    }
-
     /* Header */
     .main-heading {
       font-size: 3rem;
       font-weight: bold;
-      margin: 2rem 0 1rem;
+      margin: 2rem 2rem 1rem;
     }
 
     /* IP Box */
@@ -70,7 +62,7 @@
       padding: 1rem;
       border-radius: 5px;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 0 auto 2rem;
       font-size: 1rem;
     }
 
@@ -80,59 +72,79 @@
       margin-bottom: 0.2rem;
     }
 
-    /* Avatar Row */
-    .avatar-row {
-      margin: 2rem 0;
+    /* Articles */
+    .articles {
       display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0 2rem 3rem;
     }
 
-    .avatar-row img {
-      width: 40px;
-      height: 40px;
+    .article {
+      background-color: #1a1a1a;
       border-radius: 5px;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .article h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .article p {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .article a {
+      color: #88f;
+      text-decoration: none;
+    }
+
+    .article a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <div class="logo">
-    <span>V</span><span>E</span><span>L</span><span>I</span><span>R</span><span>A</span>
-    <small>.org</small>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h1>Velira<small>.org</small></h1>
+    <div class="top-icons">
+      <img src="icon1.png" alt="icon1" />
+      <img src="icon2.png" alt="icon2" />
+      <img src="icon3.png" alt="icon3" />
+      <img src="icon4.png" alt="icon4" />
+    </div>
   </div>
 
-  <!-- Top Right Icons -->
-  <div class="top-icons">
-    <img src="icon1.png" alt="icon1" />
-    <img src="icon2.png" alt="icon2" />
-    <img src="icon3.png" alt="icon3" />
-    <img src="icon4.png" alt="icon4" />
+  <!-- Main Heading -->
+  <div class="main-heading">Russian-style Minecraft anarchy server</div>
+
+  <!-- IP Banner -->
+  <div class="ip-banner">
+    <strong>Want to join the server?</strong>
+    All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>velira.org</b>
   </div>
 
-  <div class="top-section">
-    <!-- Main Heading -->
-    <div class="main-heading">Russian-style Minecraft anarchy server</div>
-
-    <!-- IP Banner -->
-    <div class="ip-banner">
-      <strong>Want to join the server?</strong>
-      All you need is Minecraft version 1.12.2 - 1.21.4 (any client works). Join at this IP: <b>velira.org</b>
+  <!-- Articles -->
+  <div class="articles">
+    <div class="article">
+      <h2>What is Velira?</h2>
+      <p>Velira is a Minecraft anarchy server inspired by Russian-style servers. There are no rules, no admins, and no resets. Join and experience the chaos!</p>
     </div>
 
-    <!-- Avatars -->
-    <div class="avatar-row">
-      <img src="https://mc-heads.net/avatar/Steve/40" />
-      <img src="https://mc-heads.net/avatar/Alex/40" />
-      <img src="https://mc-heads.net/avatar/Notch/40" />
-      <img src="https://mc-heads.net/avatar/Herobrine/40" />
-      <img src="https://mc-heads.net/avatar/Dream/40" />
-      <img src="https://mc-heads.net/avatar/Technoblade/40" />
-      <img src="https://mc-heads.net/avatar/Enderman/40" />
-      <img src="https://mc-heads.net/avatar/Creeper/40" />
-      <!-- Add more avatars if you'd like -->
+    <div class="article">
+      <h2>How to join</h2>
+      <p>Make sure you're using Minecraft Java Edition version 1.12.2 through 1.21.4. Then just direct connect to <b>velira.org</b> and you're in!</p>
+    </div>
+
+    <div class="article">
+      <h2>Need help?</h2>
+      <p>If you encounter any issues or want to talk with the community, join our Discord server or check out our wiki. Links coming soon!</p>
     </div>
   </div>
 

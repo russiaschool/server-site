@@ -23,21 +23,16 @@
       padding: 1rem 2rem;
     }
 
-    .top-bar h1 {
-      font-size: 2rem;
-      margin: 0;
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: bold;
       color: #fff;
-    }
-
-    .top-bar h1 small {
-      font-size: 0.8rem;
-      color: #aaa;
-      margin-left: 5px;
     }
 
     .top-icons {
       display: flex;
       gap: 0.5rem;
+      align-items: center;
     }
 
     .top-icons img {
@@ -80,15 +75,14 @@
       text-align: left;
     }
 
-.news-card img {
-  width: 100%;
-  height: auto; /* this lets it scale naturally */
-  display: block;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  border-radius: 0px;
-}
-
+    .news-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      border-radius: 0px;
+    }
 
     .news-card img:hover {
       transform: scale(1.03);
@@ -130,17 +124,30 @@
       .news-card {
         width: 100%;
       }
+
+      .top-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+
+      .top-icons {
+        justify-content: flex-start;
+      }
     }
   </style>
 </head>
 <body>
-<div class="top-icons">
-  <a href="https://discord.gg/pAktNF7P6x" target="_blank" style="display:inline-block;">
-    <img src="108-1083749_white-discord-logo-png-png-free-discord-icon-removebg-preview.png" alt="discord" />
-  </a>
-  <img src="donate.png" alt="donate" />
-</div>
 
+  <div class="top-bar">
+    <div class="site-title">0frog.org</div>
+    <div class="top-icons">
+      <a href="https://discord.gg/pAktNF7P6x" target="_blank">
+        <img src="108-1083749_white-discord-logo-png-png-free-discord-icon-removebg-preview.png" alt="discord" />
+      </a>
+      <img src="donate.png" alt="donate" />
+    </div>
+  </div>
 
   <div class="ip-banner">
     <strong>Want to join the server?</strong>
@@ -158,7 +165,7 @@
         <div class="news-meta">04/06/2025</div>
       </div>
     </div>
-
   </div>
+
 </body>
 </html>

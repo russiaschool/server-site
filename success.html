@@ -1,117 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #1e1e1e;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    header {
-      margin: 20px;
-    }
-    .container {
-      display: flex;
-      gap: 20px;
-      max-width: 1000px;
-      width: 90%;
-    }
-    .card, .info {
-      background-color: #2a2a2a;
-      padding: 20px;
-      border-radius: 0;
-      flex: 1;
-    }
-    .card h2, .info h2 {
-      margin-top: 0;
-      border-bottom: 1px solid #444;
-      padding-bottom: 10px;
-      font-size: 20px;
-    }
-    .option {
-      background-color: #3a3a3a;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 0;
-    }
-    .option span {
-      display: block;
-    }
-    .price {
-      font-weight: bold;
-      margin-top: 5px;
-    }
-    .button {
-      display: inline-block;
-      background-color: #c1e1c1;
-      color: white;
-      text-align: center;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 0;
-      font-size: 14px;
-      margin: 20px 0;
-      cursor: pointer;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-    .button:hover {
-      background-color: #c1e1c1;
-      box-shadow: 0 0 10px 2px #c1e1c1;
-    }
-    .payment-icons {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 14px;
-      color: #bbb;
-    }
-    .info p {
-      margin: 15px 0;
-      line-height: 1.6;
-    }
-    .info .highlight {
-      color: #00ff00;
-      font-weight: bold;
-    }
-    footer {
-      margin: 40px 0 10px;
-      font-size: 12px;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
+.update-article {
+  max-width: 1000px;
+  width: 90%;
+  background-color: #2a2a2a;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 0;
+  color: #ccc;
+}
 
-<header>
-  <img src="server.png" alt="Logo" style="height: 50px;">
-</header>
+.update-article h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 0;
+}
 
-<div class="container">
-  <div class="info">
-    <h2>Welcome</h2>
-    <p>Welcome to the official shop and thank you for visiting.</p>
-    <p>Here you can purchase priority queue status for your account, which will let you join the server instantly.</p>
-    <p>The priority queue status lasts for one month, after which it expires and is removed from your account.</p>
+.update-article .date-tag {
+  background-color: #1f1f1f;
+  color: #9fe99f;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-    <h2>About</h2>
-    <p>The server is over 5 months old as of 4/27/2025, the map is over 50GBs, and over 1000 players have joined at least once.</p>
-    <p>The seeds are, (for overworld) -603532664377538832, (for nether) -4172144997902289642, (for end) -4172144997902289642.</p>
-    <p>Issues? Contact support@0frog.org</p>
-  </div>
-</div>
+.update-article hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
 
-<a href="#" class="button">Donate</a>
+.update-article .strikethrough {
+  text-decoration: line-through;
+  color: #888;
+}
 
-<footer>
-  &copy; 2025
-</footer>
+.update-article ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
 
-</body>
-</html>
+.update-article li {
+  margin-bottom: 10px;
+}

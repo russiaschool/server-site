@@ -40,57 +40,40 @@
       font-size: 20px;
     }
 
-    .option {
-      background-color: #e8e8e8;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 0;
-    }
-
-    .option span {
-      display: block;
-    }
-
-    .price {
-      font-weight: bold;
-      margin-top: 5px;
-    }
-
     .button {
       display: inline-block;
-      background-color: #4caf50;
-      color: white;
-      text-align: center;
       padding: 10px 20px;
       border: none;
       border-radius: 0;
       font-size: 14px;
-      margin: 0;
       cursor: pointer;
       text-decoration: none;
       transition: 0.3s ease;
+      color: white;
+      margin-left: 10px;
     }
 
-    .button:hover {
+    .donate-button {
+      background-color: #4caf50;
+    }
+
+    .donate-button:hover {
       background-color: #45a049;
       box-shadow: 0 0 10px 2px #c1e1c1;
     }
 
-    .payment-icons {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 14px;
-      color: #666;
+    .discord-button {
+      background-color: #5865F2;
+    }
+
+    .discord-button:hover {
+      background-color: #4852c4;
+      box-shadow: 0 0 10px 2px #c7cdf9;
     }
 
     .info p {
       margin: 15px 0;
       line-height: 1.6;
-    }
-
-    .info .highlight {
-      color: #2e7d32;
-      font-weight: bold;
     }
 
     footer {
@@ -113,21 +96,6 @@
       margin-top: 0;
       font-size: 24px;
       color: #111;
-    }
-
-    .update-article .date-tag {
-      background-color: #dcedc8;
-      color: #33691e;
-      font-weight: bold;
-      display: inline-block;
-      padding: 4px 10px;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-
-    .update-article .strikethrough {
-      text-decoration: line-through;
-      color: #aaa;
     }
 
     .update-article ul {
@@ -162,7 +130,10 @@
   <div class="info">
     <div style="display: flex; justify-content: space-between; align-items: center;">
       <h2 style="margin: 0;">Welcome</h2>
-      <a href="#" class="button">Donate</a>
+      <div>
+        <a href="#" class="button donate-button">Donate</a>
+        <a href="https://0frog.org/discord" class="button discord-button">Discord</a>
+      </div>
     </div>
     <p>Welcome to the official site.</p>
     <p>This is where you can find information and updates about the server</p>
